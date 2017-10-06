@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<h1>Carlos Nah</h1>
-	<p>Software Engineer</p>
-	<nav>
-	  <ul>
-		<li><a>Home</a></li>
-		<li><a>About</a></li>
-		<li><a>contact</a></li>
-		</ul>
-	</nav>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="main.css">
+  <title>Porfolio Page</title>
+</head>
+<body>
+   <div class="container">
+      <div class="heading">
+      <header>
+      <h1>Carlos Nah | Front-End Developer</h1>
+        <small>Liberia Best Web Developer</small>
+   </header>
+    <nav>
+     <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+  </div>
+  <div class="section">
+      <div class="sidebar">
+       <h2>My Skills</h2>
+         <ul class="ul2">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Nodejs</li>
+            <li>PHP</li>
+              <p>Others Languages Coming Soon !!!!!!</p>
+         </ul>
+    </div>
+     <div class="projects">
+      <h2>Carlos Nah</h2>
+      <img src="https://pbs.twimg.com/profile_images/838824550217494529/LS01cmCL_400x400.jpg" alt="Carlos">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="right"></div>
+     <div id="newsletter">
+    <form method="post" action="mailto:cnah27@gmail.com" enctype="multipart/form-data">
+    <fieldset>
+    <legend>Contact Me</legend>
+     <label>Name:</label>
+       <input type="text" placeholder="FullName" required><br/>
+       <label>E-Mail:</label>
+         <input type="email" placeholder="john@example.com" required><br/>
+         <label>Comments:</label>
+         <textarea min="50" max="500" placeholder="Please fill in this box with your Feedback." required></textarea><br/>
+         <button type="submit" href="mailto:cnah27@gmail.com">Send</button>
+         <button type="reset">Reset</button>
+     </fieldset>
+    </form>
+        <footer>
+        <small>Made and Design by Carlos Nah</small>
+        </footer>
+  </div>
+</div>
+</body>
 </html>
