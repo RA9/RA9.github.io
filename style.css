@@ -9,6 +9,7 @@ body {
   -o-background-size: cover;
  
   background-size: cover;
+  font-family: sans-serif;
   
 }
 
@@ -19,6 +20,7 @@ h1 {
   color: white;
  
   font-size: 50px;
+  margin-bottom: 0px;
   
 }
 
@@ -29,6 +31,7 @@ h2 {
   color: white;
  
   font-size: 18px;
+  margin-top: 0px;
   
 }  
 
@@ -39,6 +42,7 @@ h2 {
   
   color: white;
 
+  font-size: 14px;
   }
 
 
@@ -60,4 +64,9 @@ h2 {
    margin-left: auto;
    margin-right: auto;
    text-align: center;
+ }
+ 
+ .gray {
+   background-color: #919191;
+   width: 50x;
  }
