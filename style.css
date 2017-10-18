@@ -4,9 +4,15 @@ body {
   margin: 0;
 }
 
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+/*About styling*/
 .about_container{
-  background: url('/photos/bg.jpg') no-repeat center center fixed
-;
+  background: DarkCyan url('/photos/') no-repeat center center fixed;
   -webkit-background-size: cover;
  
  
@@ -22,16 +28,75 @@ body {
    height: 600px;
 }
 
-li {
-  display: inline-block;
-  font-size: 12px;
-  width: 100px;
-  font-weight: bold;
-  margin-top: 30px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+  box-sizing: border-box;
+}
+
+/*############### Nav bar ############*/
+.navbar {
+  width: 100%;
+  margin: 0;
+}
+
+.navbar ul {
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
   text-align: center;
-  margin-left: 30px;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+ul li a:hover {
+  background-color: #0080ff;
+  color: #fff;
+}
+
+ul li.dropdownIcon {
+  display: none;
 }
 
 h1 {
@@ -43,12 +108,15 @@ h1 {
   
 }
 
-
+div.about-container img {
+  display: block;
+  margin: auto;
+  box-shadow: -2px/*H*/ -2px/*V*/ 20px/*B*/ 2px/*S*/ rgba(0/*Sh*/,0/*BG*/, 0/*BX*/,.15/*Op*/ ), 2px 2px 17px 2px rgba(0,0,0,1);
+}
 
 h2 {
   
   color: white;
- 
   font-size: 18px;
   margin-top: 0px;
   
@@ -70,15 +138,13 @@ h3 {
 }
 
 .bio { 
-  
   color: White;
-
   font-size: 14px;
   }
 
 
 .me {
-   
+  width:150px;
   height: 150px;
  
   border-radius: 100%;
@@ -109,7 +175,7 @@ h3 {
   margin-top: 80px;
 }
 
-clear {
+.clear {
   clear: both;
 }
 
@@ -158,4 +224,36 @@ p {
   font-weight: bold;
   font-size: 13px;
 }
-   
+
+
+/*######### Mobile ###########*/
+
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+  
+  ul li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+  
+  ul.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  ul.responsive {
+    position: relative;
+  }
+  
+  ul.responsive li {
+    display: inline;
+    float: none; 
+  }
+  
+  ul.responsive li a {
+    display: block;
+    text-align: left;
+  }
