@@ -2,109 +2,27 @@ body {
    
   font-family: sans-serif;
   margin: 0;
+  min-height:75rem;
+  padding-top:4.5rem;
 }
 
-.container {
-  width: 100%;
-  margin: auto;
-  padding-top: 4%;
-  padding-bottom: 4%;
+/* The navigation bar 
+ {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
-/*About styling*/
-.about_container{
-  background: DarkCyan url('/photos/') no-repeat center center fixed;
-  -webkit-background-size: cover;
- 
- 
-  -moz-background-size: cover;
- 
-
-  -o-background-size: cover;
-
-  background-size: cover;
- 
-   font-family: sans-serif;
-  
-   height: 600px;
-}
-
-.row {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-
-.row::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+*/
 
 * {
-  box-sizing: border-box;
-}
-
-/*############### Nav bar ############*/
-.navbar {
-  width: 100%;
-  margin: 0;
-}
-
-.navbar ul {
-  background-color: #eee;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-  float: left;
-}
-
-ul.topnav li.topnav-right {
-  float: right;
-}
-
-ul li a {
-  display: block;
-  text-decoration: none;
-  min-height: 16px;
-  text-align: center;
-  padding: 14px;
-  text-transform: uppercase;
-  color: #666;
-}
-
-ul li a:hover {
-  background-color: #0080ff;
-  color: #fff;
-}
-
-ul li.dropdownIcon {
-  display: none;
+  box-sizing: content-box;
 }
 
 h1 {
- 
   color: white;
- 
   font-size: 50px;
   margin-bottom: 0px;
-  
 }
 
 div.about-container img {
@@ -140,18 +58,12 @@ h3 {
   color: White;
   font-size: 14px;
   }
-
+  
+.jumbotron{
+  text-align:center;
+}
 
 .me {
-  width:150px;
-  height: 150px;
- 
-  border-radius: 100%;
- 
-  border-style: solid;
-
-  border-color: white;
-
   margin-top: 40px;
   }
   
@@ -212,6 +124,13 @@ p {
   color: white;
 }
 
+
+.social_media{
+  float:left;
+  text-align:center;
+  padding-top:20px;
+  
+}
 .contact-info {
   color: white;
   font-size: 13px;
@@ -223,36 +142,36 @@ p {
   font-weight: bold;
   font-size: 13px;
 }
+.container{
+  background:DarkCyan;
+}
 
+footer {
+  background-color: black;
+  color: gray;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  text-align: center;
+  font-family: cursive , sans-serif;
+}
 
 /*######### Mobile ###########*/
+  
+  // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
 
-@media screen and (max-width: 680px) {
-  ul.topnav li:not(:nth-child(1)) {
-    display: none;
-  }
-  
-  ul li.dropdownIcon {
-    display: block;
-    float: right;
-  }
-  
-  ul.responsive li.dropdownIcon {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  
-  ul.responsive {
-    position: relative;
-  }
-  
-  ul.responsive li {
-    display: inline;
-    float: none; 
-  }
-  
-  ul.responsive li a {
-    display: block;
-    text-align: left;
-  }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
