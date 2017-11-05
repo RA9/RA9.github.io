@@ -1,9 +1,10 @@
 
-body {
-  padding-top: 50px;
+.container {
+  max-width: 750px;
 }
-
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+h1 {
+  font-family: 'Rock Salt', cursive;
+}
+p {
+  margin: 25px;
 }
