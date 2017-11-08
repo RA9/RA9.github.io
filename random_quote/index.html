@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="This is a random quote machine generat">
+    <meta name="author" content="Carlos S. Nah">
     <link rel="icon" href="../../favicon.ico">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -27,21 +27,29 @@
 
   <body onload="startTime();startDate()">
 	<div class="container-fluid text-center">
-	<div class='time text-center'>
+	  <div class="row">
+		<div class="col-xs-12 time">
 	  <div id="date"></div>
 	  <div id="display"></div>
 	</div>
+	<div class="col-xs-12 jumbotron">
 	  <h1>Random Quote Machine</h1>
-	  <p>These are some random quotes from <a href="https://forismatic.com/" target='_blank'>forismatic.com</a>.
-		I hope you enjoy them!</p>
+	  <p>Hey Guyz here are some random quotes from <a href="https://forismatic.com/" target='_blank'>forismatic.com</a></p>
+	  <p>I hope you enjoy them!</p>
 	  
+	  
+		<!--Random Quotes-->
 	  <div class="quotes">
 		<p id="quote"></p>
 		<p id="author"></p>
 	  </div>
-	  <div class="button">
+	  <!--End-->
+		
+	  <div class="col-md-6 button">
 		<button class="btn btn-default get-quote" type="submit">New Quote</button>
 		<a class="btn btn-success share-twitter" href="#">Tweet with Twitter</a>
+	  </div>
+	</div>
 	  </div>
 	  <br/>
 	  <footer>
@@ -49,6 +57,7 @@
 		<span class="btn  btn-default"><a href="https://freecodecamp.org/ra9"><i class="fa fa-freecodecamp"></i>FreeCodeCamp</a></span>
 		<span class="btn  btn-default"><a href="https://github.com/ra9"><i class="fa fa-github"></i>Github</a></span>
 		<span class="btn  btn-default"><a href="https://facebook.com/carlos.rademe"><i class="fa fa-facebook"></i>Facebook</a></span>
+		<hr/>
 		<p class="carl">&copy; Made with <i class="fa fa-heart"></i> by Carlos S. Nah Jr </p>
 		</div>
 	  </footer>
