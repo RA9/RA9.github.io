@@ -1,10 +1,70 @@
-
-.container {
-  max-width: 750px;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+ background-color: black; 
+ margin: 0px;
+ padding: 0px;
 }
 h1 {
-  font-family: 'Rock Salt', cursive;
+ color: white;
+  font-family: "Iimes New Roman",cursive;
+  font-size: 50px;
 }
+
+.button {
+  display: block;
+  margin-left: 10px;
+  padding: 10px auto;
+}
+
 p {
-  margin: 25px;
+  color:White;
+  font-family:cursive;
+  font-size-adjust:30px;
+}
+
+/*Date*/
+.time {
+  background-color: DarkCyan;
+  color: White;
+  font-size: 24px;
+  border:2px solid White;
+  margin-bottom:20px;
+  padding:auto;
+}
+#date {
+  padding: 15px;
+  
+}
+
+a {
+  display: block;
+}
+
+a:hover,
+a:focus {
+  background: Black;
+  color: White;
+}
+
+.quotes {
+  background-color: gray;
+  width: 33%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top:20px;
+  margin-bottom: 20px;
+  color: white;
+  border: 5px solid white;
+  padding:30px;
+}
+
+.carl {
+  display: block;
+  background-color: DarkCyan;
+  color: White;
+  margin:20px;
+  padding: 20px;
 }

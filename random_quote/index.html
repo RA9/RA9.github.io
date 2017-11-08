@@ -8,8 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Starter Template for Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Random Quote FCC</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,29 +25,42 @@
     <![endif]-->
   </head>
 
-  <body>
-	<div class='container text-center'>
-
-  <h1>Random Quotes Rewritten</h1>
- 
-	<p>These are some random quotes from <a href="https://forismatic.com/" target='_blank'>forismatic.com</a>.
-	I hope you enjoy them!</p>
- 
-	<button class='btn btn-success'>New Quote</button>
- 
-	<a class='btn btn-primary' id='tweet' href='#' target='_blank' role='button'>
-	  <i class="fa fa-twitter"></i> Tweet the Quote</a>
- 
-	  <p id='random_quote'></p>
-
+  <body onload="startTime();startDate()">
+	<div class="container-fluid text-center">
+	<div class='time text-center'>
+	  <div id="date"></div>
+	  <div id="display"></div>
+	</div>
+	  <h1>Random Quote Machine</h1>
+	  <p>These are some random quotes from <a href="https://forismatic.com/" target='_blank'>forismatic.com</a>.
+		I hope you enjoy them!</p>
+	  
+	  <div class="quotes">
+		<p id="quote"></p>
+		<p id="author"></p>
 	  </div>
-
+	  <div class="button">
+		<button class="btn btn-default get-quote" type="submit">New Quote</button>
+		<a class="btn btn-success share-twitter" href="#">Tweet with Twitter</a>
+	  </div>
+	  <br/>
+	  <footer>
+		<div class="col-md-8 footer">
+		<span class="btn  btn-default"><a href="https://freecodecamp.org/ra9"><i class="fa fa-freecodecamp"></i>FreeCodeCamp</a></span>
+		<span class="btn  btn-default"><a href="https://github.com/ra9"><i class="fa fa-github"></i>Github</a></span>
+		<span class="btn  btn-default"><a href="https://facebook.com/carlos.rademe"><i class="fa fa-facebook"></i>Facebook</a></span>
+		<p class="carl">&copy; Made with <i class="fa fa-heart"></i> by Carlos S. Nah Jr </p>
+		</div>
+	  </footer>
+	</div>
+	
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/style.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
