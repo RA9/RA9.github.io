@@ -52,7 +52,7 @@ $(document).ready(function(){
     $("#author").html("-" + data.quoteAuthor);
   });
   }
-  $('.share-twitter').on("click",function(){
+  $("#twitter").on("click",function(){
 	  window.open("https://twitter.com/intent/tweet?text="+quotes);
   });
   $('.get-quote').on("click",function(){
