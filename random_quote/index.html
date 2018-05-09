@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is a random quote machine generat">
+    <meta name="author" content="Carlos S. Nah">
+    <link rel="icon" href="../../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Random Quote FCC</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body onload="startTime();startDate()">
+	<div class="container-fluid text-center">
+	  <div class="row">
+		<div class="col-xs-12 time">
+	  <div id="date"></div>
+	  <div id="display"></div>
+	</div>
+	<div class="col-xs-12 jumbotron">
+	  <h1>Random Quote Machine</h1>
+	  <p>Hey Guyz here are some random quotes from <a href="https://forismatic.com/" target='_blank'>forismatic.com</a></p>
+	  <p>I hope you enjoy them!</p>
+	  
+	  <hr/>
+		<!--Random Quotes-->
+	  <div class="quotes">
+		<p id="quote"></p>
+		<p id="author"></p>
+	  </div>
+	  <!--End-->
+		
+	  <div class="col-md-6 button">
+		<button class="btn btn-default get-quote" type="submit">New Quote</button>
+		<a class="btn btn-success" id="twitter" href="#" target="_blank">Tweet with Twitter</a>
+	  </div>
+	</div>
+	  </div>
+	  <br/>
+	  <footer>
+		<div class="col-md-8 footer">
+		<span class="btn  btn-default"><a href="https://freecodecamp.org/ra9"><i class="fa fa-freecodecamp"></i>FreeCodeCamp</a></span>
+		<span class="btn  btn-default"><a href="https://github.com/ra9"><i class="fa fa-github"></i>Github</a></span>
+		<span class="btn  btn-default"><a href="https://facebook.com/carlos.rademe"><i class="fa fa-facebook"></i>Facebook</a></span>
+		<hr/>
+		<p class="carl">&copy; Made with <i class="fa fa-heart"></i> by Carlos S. Nah Jr </p>
+		</div>
+	  </footer>
+	</div>
+	
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/style.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

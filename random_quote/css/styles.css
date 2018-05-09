@@ -1,0 +1,87 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+ background-color: black; 
+ margin: 0px;
+ padding: 0px;
+}
+h1 {
+  color: White;
+  font-family: "Iimes New Roman",cursive;
+  font-size: 50px;
+}
+
+.jumbotron {
+  background: DarkGray;
+}
+
+.button {
+  display: block;
+  margin-left: 10px;
+  padding: 10px auto;
+}
+
+#author{
+  font-size: 30px;
+  font-style: italic;
+}
+#quote {
+  color: Black;
+  font-family: cursive;
+  font-size: 40px;
+}
+#author {
+  color: DarkCyan;
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+p {
+  color:White;
+  font-family:cursive;
+  font-size-adjust:30px;
+  font-style: italic;
+  word-wrap: word-break;
+}
+
+/*Date*/
+.time {
+  background-color: DarkCyan;
+  color: White;
+  font-size: 24px;
+  border:2px solid White;
+  margin-bottom:20px;
+  padding:auto;
+}
+#date {
+  padding: 15px;
+}
+
+a {
+  display: block;
+  margin-left: 10px;
+}
+
+a:hover,
+a:focus {
+  background: Black;
+  color: White;
+}
+
+/*.quotes {
+  width: 33.3%;
+  backgroung: gray;
+  margin-right:auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+  height: auto;
+  border: 5px solid White;
+}*/
+
+footer p {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 20px;
+}
