@@ -22,14 +22,13 @@
     <title>Carlos S. Nah | Portfolio</title>
     </head>
   <body>
-  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
-     <a class="navbar-brand" href="#">&lt; Carlos S. Nah Jr. /&gt;</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">&lt; Carlos S. Nah Jr. &gt;</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -55,7 +54,7 @@
     <div class="container">
        <br>
       <header class="jumbotron text-center">
-        <img src="assets/images/carlos.jpg" class="rounded-circle me" width="150" height="150">
+        <img src="assets/images/carlos.jpg" class="rounded-circle me" width="350" height="350">
         <h1>Carlos S. Nah Jr.</h1>
         <small>Fullstack Web Developer</small>
         	<hr class="yellow"/>
@@ -67,17 +66,16 @@
     	  </header>
     	  	<!--Code snippet-->
     	  	<h3 id="code-samples">Code Snippet</h3>
-	        <hr class="yellow"/>
-    	  <section class="row" id="code-samples">
-    	    <article class="col-md-6">
-	         <div class="box">
-	      	<h4>Temperature Conversion</h4>
-      		<p>
-      		  This ruby program will prompt the user for a temperature
-      		  in degrees Celsius and let the user know what the
-      		  corresponding temperature is in Fahrenheit.
-      		</p>
-      	  </div>
+	  <hr class="yellow"/>
+
+	  <div class="box">
+		<h4>Temperature Conversion</h4>
+		<p>
+		  This ruby program will prompt the user for a temperature
+		  in degrees Celsius and let the user know what the
+		  corresponding temperature is in Fahrenheit.
+		</p>
+	  </div>
 	  <div class="box">
 		<pre><code class="language-ruby">
 			puts &quot;Please enter a value for degree Celsius&quot;
@@ -92,9 +90,27 @@
 		  </code></pre>
 	  </div>
 
-    	    </article>
-    	    <article class="col-md-6">
-    	       <div class="box">
+	  <br class="clear" />
+	  <div class="box">
+
+		<h4>Ordinal Challenge</h4>
+		<p>
+		  This ruby program will convert a plain number
+		  to the ordinal of the number. So for example,
+		  if the user enters 2, it will display 2nd, if
+		  the user enters 3, it will display 3rd, etc.
+		</p>
+	  </div>
+	  <div class="box">
+		<pre><code class="language-ruby">n = 0
+			while n &lt; 10
+			puts &quot;Hello, #{n}&quot;
+			n = n + 1
+			end
+			puts &quot;Goodbye&quot;</code></pre>
+	  </div>
+	  <br class="clear" />
+	  <div class="box">
 		<h4>Foobar</h4>
 		<p>
 		  This ruby program is an adaptation of a classic technical
@@ -141,10 +157,7 @@
 			end</code>
 		</pre>
 	  </div>
-    	    </article>
-    	  </section>
-    	  <br class="clear" />
-    	  
+	  <br class="clear" />
     	  <!--Projects-->
     	  <h3 id="projects">Projects</h3>
 	  <hr class="yellow" />
@@ -240,7 +253,10 @@
   	  
   <div class="container"  id="hire-me">
   	<h3>Contact Me </h3>
-    If you need help in your web development career or want me to create your web application click <a href="mailto:cnah27@gmail.com" class="bg-blue">Here</a>
+     <p> 
+       If you need help in your web development career or want me to create your web application click <a href="mailto:cnah27@gmail.com" class="bg-blue">Here</a>
+    </p>  
+  </div>
    </div> <!-- End of Container-->
    
    
