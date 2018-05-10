@@ -1,23 +1,11 @@
+
 body {
    
   font-family: sans-serif;
-  margin: 0;
   min-height:75rem;
   padding-top:4.5rem;
 }
 
-/* The navigation bar 
- {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
-*/
-
-* {
-  box-sizing: content-box;
-}
 
 h1 {
   color: white;
@@ -25,7 +13,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-div.about-container img {
+div .about-container img {
   display: block;
   margin: auto;
   box-shadow: -2px/*H*/ -2px/*V*/ 20px/*B*/ 2px/*S*/ rgba(0/*Sh*/,0/*BG*/, 0/*BX*/,.15/*Op*/ ), 2px 2px 17px 2px rgba(0,0,0,1);
