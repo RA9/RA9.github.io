@@ -1,65 +1,83 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Carlos Nah</title>
-	<meta name="description" content="Carlos Nah is a professional
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Carlos S. Nah Jr. is a professional
 	software engineer specializing in full-stack development.
-	He has extensive experience with Ruby, Rails, JavaScript,PHP 
+	He has extensive experience with Ruby, Rails, JavaScript,Reactjs,PHP 
 	and is capable of building web applications.">
-    <script src="./js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--Custom Css-->
+    <link rel="stylesheet" href="assets/font-mfizz/font-mfizz.css">
     <link rel="stylesheet" href="style.css" />
 	<link
     rel="stylesheet" href="prism-atom-dark.css" type="text/css"
     media="screen"
 	/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript" src="prism.js"></script>
-	<script type="text/javascript" src="prism.ruby.js"></script>
-	<link rel="stylesheet" href="assests/css/bootstrap.min.css">  </head>
+    <title>Carlos S. Nah | Portfolio</title>
+    </head>
   <body>
-	<div class="container-fluid">
-	  <!--Nav Menu-->
-	  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">Carlos Nah</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
-		  <span class="navbar-toggler-icon"></span> 
-		  </button> 
-		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> 
-			<div class="navbar-nav"> 
-			  <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a> 
-			  <a class="nav-item nav-link" href="#code-samples">Code Samples</a>
-			  <a class="nav-item nav-link" href="#web-apps">Web Apps</a>
-			  <a class="nav-item nav-link" href="#hire-me">Hire Me</a>
-			  </div> 
-			  </div> 
-			  </nav>
-	  <!--End Menu-->
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed">
+     <a class="navbar-brand" href="#">&lt; Carlos S. Nah Jr. /&gt;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+  </button>
 
-	  <!--About-->
-		<div class="jumbotron">
-      <img src="photos/rsz.jpg" class="rounded-circle me" width="350" height="350">
-	  <h1>Carlos S. Nah</h1>
-	  <h3>Software Engineer</h3>
-		<hr class="yellow"/>
-	  <p>Hi, My name is Carlos S. Nah Jr a Front End Developer with two Years of 
-		experince in HTML5,CSS3, and Javascript.
-		I am a learner who is always eager to learn new things and my life is 
-		simple with acquanting new things everyday.
-	  </p>
-		</div>
-	  <!--End-->
-		<!--Code snippet-->
-	  <h3 id="code-samples">Code Snippet</h3>
-	  <hr class="yellow"/>
-
-	  <div class="box">
-		<h4>Temperature Conversion</h4>
-		<p>
-		  This ruby program will prompt the user for a temperature
-		  in degrees Celsius and let the user know what the
-		  corresponding temperature is in Fahrenheit.
-		</p>
-	  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#code-samples">Code Samples</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#hire-me">Hire Me</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <div class="container">
+       <br>
+      <header class="jumbotron text-center">
+        <img src="assets/images/carlos.jpg" class="rounded-circle me" width="150" height="150">
+        <h1>Carlos S. Nah Jr.</h1>
+        <small>Fullstack Web Developer</small>
+        	<hr class="yellow"/>
+        <p>Hi, My name is Carlos S. Nah Jr a Fullstack Web Developer with two Years of 
+    		experince in HTML5,CSS3, Javascript , PHP and  MySQL .<br>
+    		I am a learner who is always eager to learn new Skills and my life is 
+    		simple with acquanting with new things everyday.
+    	  </p>
+    	  </header>
+    	  	<!--Code snippet-->
+    	  	<h3 id="code-samples">Code Snippet</h3>
+	        <hr class="yellow"/>
+    	  <section class="row" id="code-samples">
+    	    <article class="col-md-6">
+	         <div class="box">
+	      	<h4>Temperature Conversion</h4>
+      		<p>
+      		  This ruby program will prompt the user for a temperature
+      		  in degrees Celsius and let the user know what the
+      		  corresponding temperature is in Fahrenheit.
+      		</p>
+      	  </div>
 	  <div class="box">
 		<pre><code class="language-ruby">
 			puts &quot;Please enter a value for degree Celsius&quot;
@@ -74,27 +92,9 @@
 		  </code></pre>
 	  </div>
 
-	  <br class="clear" />
-	  <div class="box">
-
-		<h4>Ordinal Challenge</h4>
-		<p>
-		  This ruby program will convert a plain number
-		  to the ordinal of the number. So for example,
-		  if the user enters 2, it will display 2nd, if
-		  the user enters 3, it will display 3rd, etc.
-		</p>
-	  </div>
-	  <div class="box">
-		<pre><code class="language-ruby">n = 0
-			while n &lt; 10
-			puts &quot;Hello, #{n}&quot;
-			n = n + 1
-			end
-			puts &quot;Goodbye&quot;</code></pre>
-	  </div>
-	  <br class="clear" />
-	  <div class="box">
+    	    </article>
+    	    <article class="col-md-6">
+    	       <div class="box">
 		<h4>Foobar</h4>
 		<p>
 		  This ruby program is an adaptation of a classic technical
@@ -141,14 +141,18 @@
 			end</code>
 		</pre>
 	  </div>
-	  <br class="clear" />
-
-	  <h3 id="web-apps">Web Apps</h3>
+    	    </article>
+    	  </section>
+    	  <br class="clear" />
+    	  
+    	  <!--Projects-->
+    	  <h3 id="projects">Projects</h3>
 	  <hr class="yellow" />
-
-	  <div class="box">
+    	  <section class="row">
+    	    <atricle class="col-md-6">
+    	      <div class="box">
 		<h4>Quote Generator</h4>
-		<img src="splurty.png" class="full-width" />
+		<img src="assets/images/splurty.jpg" class="full-width" />
 		<p>
 		  A database-powered quote generator with a mobile-first
 		  design, using the Ruby on Rails framework, HTML, and CSS.
@@ -156,10 +160,10 @@
 		  on Heroku.
 		</p>
 	  </div>
-
+	  
 	  <div class="box">
 		<h4>Yelp Clone</h4>
-		<img src="nomster.png" class="full-width" />
+		<img src="assets/images/yelp.jpg" class="img-fluid full-width" />
 		<p>
 		  A Yelp clone that integrates with the Google Maps API
 		  and includes features like user comments, star ratings,
@@ -167,10 +171,11 @@
 		</p>
 	  </div>
 	  <br class="clear" />
-
-	  <div class="box">
+    	    </atricle>
+    	    <article class="col-md-6">
+    	      <div class="box">
 		<h4>Two-Sided Market Place</h4>
-		<img src="flixter.png" class="full-width" />
+		<img src="assets/images/flixster.jpg" class="img-fluid full-width" />
 		<p>
 		  A two-sided, video-streaming marketplace platform that
 		  features credit card payment capabilities, user role
@@ -180,16 +185,20 @@
 	  </div>
 	  <div class="box">
 		<h4>Test Driven Development</h4>
-		<img src="grammable.png" class="full-width" />
+		<img src="assets/images/instagram.jpg" class="img-fluid full-width" />
 		<p>
 		  An Instagram clone that was built using industry-standard, test-driven
 		  development following numerous red/green/refactor cycles.
 		</p>
 	  </div>
 	  <br class="clear" />
-	  <div class="box">
+    	    </article>
+    	  </section>
+    	  <section class="row">
+    	    <article class="col-xs-12">
+    	      <div class="box">
 		<h4>Single Page Todo Application</h4>
-		<img src="todoster.png" class="full-width" />
+		<img src="assets/images/todoster.png" class="img-fluid full-width" />
 		<p>
 		  This single-page to-do application features a
 		  fluid user interface that– by using JavaScript–
@@ -198,7 +207,7 @@
 	  </div>
 	  <div class="box">
 		<h4>Agile Team Project</h4>
-		<img src="chess.png" class="full-width" />
+		<img src="assets/images/chess.jpg" class="img-fluid full-width" />
 		<p>
 		  Worked on an Agile software development team building
 		  a chess application. Under the guidance of a senior software engineer,
@@ -208,135 +217,57 @@
 	  </div>
 	  <!--End-->
 	  <br class="clear" />
-		<!--Skills and Tools-->
-	  <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-	  <hr class="yellow" />
-	  <p class="skills-and-tools">
-		Carlos has developed proficiency and expertise
-		in the following programming languages and
-		comfort with the following tools.
-	  </p>
-	  <div class="icons">
-		<img src="photos/github.png" class="icon" />
-		<img src="photos/rubocop.png" class="icon"/>
-		<img src="photos/trello.png" class="icon" />
-		<img src="photos/slack.png" class="icon"/>
-		<img src="codeship.png" class="icon"/>
-		  <!--End-->
-		<br class="clear" />
-		<img src="skills.png" class="icon" />
-	  </div>
-	  <!--Menu bar-->
-	  <div class="container" id="hire-me">
-		<h3>Contact Me </h3>
-		<form  id="needs-validation" novalidate>
-		  <div class="row">
-			<div class="col-md-6 mb-3">
-			  <label for="validationCustom01">First name</label>
-			  <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
-			</div>
-			<div class="col-md-6 mb-3">
-			  <label for="validationCustom02">Last name</label>
-			  <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
-			</div>
-		  </div>
-		  <div class="row">
-			<div class="col-md-6 mb-3">
-			  <label for="validationCustom03">Subject</label>
-			  <input type="text" class="form-control" id="validationCustom03" placeholder="Subject" required>
-			  <div class="invalid-feedback">
-				Please provide a Subject.
-			  </div>
-			</div>
-			<div class="col-md-3 mb-3">
-			  <label for="validationCustom04">Comment</label>
-			  <textarea class="form-control" id="validationCustom04" placeholder="Please leave a comment and I will get to you as soon as possible" required></textarea>
-			  <div class="invalid-feedback">
-				Please write a comment or description.
-			  </div>
-			</div>
-		  </div>
-		  <button class="btn btn-primary text-center" type="submit">Send</button>
-		</form>
-
-<script>
-//  JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-
-  window.addEventListener('load', function() {
-    var form = document.getElementById('needs-validation');
-    form.addEventListener('submit', function(event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      form.classList.add('was-validated');
-    }, false);
-  }, false);
-})();
-</script>
-        <div class="social_media">
-		  <button class="btn btn-responsive bg-white"><a href="https://github.com/RA9" target="_blank"><i class="fa fa-github">Github</i></a></button>
-		  <button class="btn btn-responsive bg-white"><a href="https://freecodecamp.org/ra9" target="_blank"><i class="fa fa-free-code-camp"></i>Freecodecamp</a></button>
-		  <button class="btn btn-responsive bg-white"><a href="https://facebook.com/carlos.rademe" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></button><br>
-		  <button class="btn btn-responsive bg-white"><a href="https://twitter.com/carlosnah8" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></button>
-		</div>
-		<br class="clear">
-	  </div>
-	  <!--End-->
+    	    </article>
+    	  </section>
+    	  
+    		<!--Skills and Tools-->
+  	  <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+  	  <hr class="yellow" />
+  	  <p class="skills-and-tools">
+  		Carlos has developed proficiency and expertise
+  		in the following programming languages and
+  		comfort with the following tools.
+  	  </p>
+  	  <div class="icons">
+  		 <button class="btn btn-primary"><i class="icon-git"></i></button>
+  		  <button class="btn btn-primary"><i class="icon-html5"></i></button>
+  		   <button class="btn btn-primary"><i class="icon-css3"></i></button>
+  		 <button class="btn btn-primary"><i class="icon-javascript-alt"></i></button>
+  		 <button class="btn btn-primary"><i class="icon-php"></i></button>
+  		 <button class="btn btn-primary"><i class="icon-reactjs"></i></button>
+  		  <!--End-->
+  	  </div>
+  	  
+  <div class="container"  id="hire-me">
+  	<h3>Contact Me </h3>
+    If you need help in your web development career or want me to create your web application click <a href="mailto:cnah27@gmail.com" class="bg-blue">Here</a>
+   </div> <!-- End of Container-->
+   
+   
+	 
       <!--Footer-->
-		<footer>
-		  <p>&copy; Design by Carlos S. Nah 2017</p>
+		<footer class="fixed-bottom">
+			<div class="social-media">
+				<button class="btn btn-responsive bg-white"><a href="https://github.com/RA9" target="_blank"><i class="fa fa-github"></i></a></button>
+			    <button class="btn btn-responsive bg-white"><a href="https://freecodecamp.org/ra9" target="_blank"><i class="fa fa-free-code-camp"></i></a></button>
+				<button class="btn btn-responsive bg-white"><a href="https://facebook.com/carlos.rademe" target="_blank"><i class="fa fa-facebook"></i></a></button>
+				<button class="btn btn-responsive bg-white"><a href="https://twitter.com/carlosnah8" target="_blank"><i class="fa fa-twitter"></i></a></button>
+			
+			</div>
+		  <p>&copy; Design with <i style="color: red;" class="fa fa-heart"></i> by Carlos S. Nah Jr. 2018</p>
 		</footer>
 
-	  <script src="assets/js/jquery.min.j"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
-	  <script src="assests/js/bootstrap.min.js" ></script>
-	  
-	</div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="prism.js"></script>
+	<script type="text/javascript" src="prism.ruby.js"></script>
   </body>
-</html>
-<!DOCTYP html>
-<html>
-<head>
-    <title>My Portfolio</titke>
-    </head>
-<body>
-    <div>
-        <header>
-            <h1>Carlos Nah</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <section>
-                <article>
-                    <h2>My Skills</h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>JQuery</li>
-                        <li>Bootstrap3</li>
-                        <li>PHP</li>
-                        <li>Nodejs</li>
-                    </ul>
-                </article>
-            </section>
-        </div>
-        <footer>
-            <address>
-               Name:<a></a>
-                Email:<a>cnah27@gmail.com</a>
-                Phone:<a>+231-776-728-619</a>
-            </address>
-        </footer>
-    </div>
-</body>
 </html>
