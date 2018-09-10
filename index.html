@@ -1,289 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Carlos S. Nah Jr. is a professional
 	software engineer specializing in full-stack development.
 	He has extensive experience with Ruby, Rails, JavaScript,Reactjs,PHP 
 	and is capable of building web applications.">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <meta name="description" content="">
+    <meta name="author" content="Carlos S. Nah Jr.">
+
+    <title>Carlos Portfolio's</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
     
-    <!--Custom Css-->
-    <link rel="stylesheet" href="assets/font-mfizz/font-mfizz.css">
-    <link rel="stylesheet" href="style.css" />
-	<link
-    rel="stylesheet" href="prism-atom-dark.css" type="text/css"
-    media="screen"
-	/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Carlos S. Nah | Portfolio</title>
-    </head>
-  <body>
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">&lt; Carlos S. Nah Jr. /&gt;</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#code-samples">Code Samples</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#hire-me">Hire Me</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-    <div class="container">
-       <br>
-      <header class="jumbotron text-center">
-        <img src="assets/images/carlos.jpg" class="rounded-circle me" width="250" height="200">
-        <h1>Carlos S. Nah Jr.</h1>
-        <small>Fullstack Web Developer</small>
-        	<hr class="yellow"/>
-        <p>Hi, My name is Carlos S. Nah Jr a Fullstack Web Developer with two Years of 
-    		experince in HTML5,CSS3, Javascript , PHP and  MySQL .<br>
-    		I am a learner who is always eager to learn new Skills and my life is 
-    		simple with acquanting with new things everyday.
-    	  </p>
-    	  </header>
-    	  	<!--Code snippet-->
-    	  	<h3 id="code-samples">Code Snippet</h3>
-	  <hr class="yellow"/>
+    <style>
+    				header {
+	background-image: url('img/carlos.jpg');
+	background-size: cover;
+	background-position: center;
+}
 
-	  <div class="box">
-		<h4>Temperature Conversion</h4>
-		<p>
-		  This ruby program will prompt the user for a temperature
-		  in degrees Celsius and let the user know what the
-		  corresponding temperature is in Fahrenheit.
-		</p>
-	  </div>
-	  <div class="box">
-		<pre><code class="language-ruby">
-			puts &quot;Please enter a value for degree Celsius&quot;
 
-			celsius = gets.to_i
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 1em;
+  }
+}
 
-			def celsius_fahnrenheit(celsius)
-			return f = celsius * 9/5 + 32
 
-			end
-			puts &quot;The Temperature is #{celsius_fahnrenheit(celsius)} degree fahnrenheit&quot;
-		  </code></pre>
-	  </div>
+    </style>
 
-	  <br class="clear" />
-	  <div class="box">
+  </head>
 
-		<h4>Ordinal Challenge</h4>
-		<p>
-		  This ruby program will convert a plain number
-		  to the ordinal of the number. So for example,
-		  if the user enters 2, it will display 2nd, if
-		  the user enters 3, it will display 3rd, etc.
-		</p>
-	  </div>
-	  <div class="box">
-		<pre><code class="language-ruby">n = 0
-			while n &lt; 10
-			puts &quot;Hello, #{n}&quot;
-			n = n + 1
-			end
-			puts &quot;Goodbye&quot;</code></pre>
-	  </div>
-	  <br class="clear" />
-	  <div class="box">
-		<h4>Foobar</h4>
-		<p>
-		  This ruby program is an adaptation of a classic technical
-		  interview problem which displays sequences
-		  of the Foobar pattern.
-		</p>
-	  </div>
+  <body id="page-top">
 
-	  <div class="box">
-		<pre><code class="language-ruby"># If divisible by both 3 and 5, write Foobar.
-			#please enter any number of your choice
-			puts &quot;Choose total number to count up to:&quot;
-			count = gets.chomp.to_i 
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Carlos S. Nah Jr.</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-			while count != count.to_f || count == 0
-			puts &quot;Error! Only enter whole numbers.&quot;
-			puts &quot;No zeroes, words or fractions allowed. Try again.&quot;
-			count = gets.chomp.to_i 
-			end
+    <!-- Header -->
+    <header  class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <!--<img class="img-fluid rounded-circle mb-5 d-block mx-auto" src="img/carlos.jpg" width="300" height="300" alt="">-->
+        <h1 class="text-uppercase mb-0">Carlos S. Nah Jr.</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+      </div>
+    </header>
 
-			def foo_bar_3_(num)
-			num % 3 
-			end
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			def foo_bar_5(num)
-			num % 5 
-			end 
-			def foo_bar_3_5(num)
-			num % 15
-			end
-
-			n = 1
-			while n &lt;= count
-			if foo_bar_3_5(n) == 0
-			puts &quot;Foobar&quot;
-			elsif foo_bar_3_(n) == 0
-			puts &quot;Foo&quot;
-			elsif foo_bar_5(n) == 0
-			puts &quot;Bar&quot;
-			else
-			puts n
-			end
-			n += 1
-			end</code>
-		</pre>
-	  </div>
-	  <br class="clear" />
-    	  <!--Projects-->
-    	  <h3 id="projects">Projects</h3>
-	  <hr class="yellow" />
-    	  <section class="row">
-    	    <atricle class="col-md-6">
-    	      <div class="box">
-		<h4>Quote Generator</h4>
-		<img src="assets/images/splurty.jpg" class="full-width" />
-		<p>
-		  A database-powered quote generator with a mobile-first
-		  design, using the Ruby on Rails framework, HTML, and CSS.
-		  Uses Git and GitHub for version control, and launched
-		  on Heroku.
-		</p>
-	  </div>
-	  
-	  <div class="box">
-		<h4>Yelp Clone</h4>
-		<img src="assets/images/yelp.jpg" class="img-fluid full-width" />
-		<p>
-		  A Yelp clone that integrates with the Google Maps API
-		  and includes features like user comments, star ratings,
-		  image uploading, and user authentication.
-		</p>
-	  </div>
-	  <br class="clear" />
-    	    </atricle>
-    	    <article class="col-md-6">
-    	      <div class="box">
-		<h4>Two-Sided Market Place</h4>
-		<img src="assets/images/flixster.jpg" class="img-fluid full-width" />
-		<p>
-		  A two-sided, video-streaming marketplace platform that
-		  features credit card payment capabilities, user role
-		  management, complex user interfaces, and advanced
-		  database relationships.
-		</p>
-	  </div>
-	  <div class="box">
-		<h4>Test Driven Development</h4>
-		<img src="assets/images/instagram.jpg" class="img-fluid full-width" />
-		<p>
-		  An Instagram clone that was built using industry-standard, test-driven
-		  development following numerous red/green/refactor cycles.
-		</p>
-	  </div>
-	  <br class="clear" />
-    	    </article>
-    	  </section>
-    	  <section class="row">
-    	    <article class="col-xs-12">
-    	      <div class="box">
-		<h4>Single Page Todo Application</h4>
-		<img src="assets/images/todoster.png" class="img-fluid full-width" />
-		<p>
-		  This single-page to-do application features a
-		  fluid user interface that– by using JavaScript–
-		  allows users to rapidly add dynamic content.
-		</p>
-	  </div>
-	  <div class="box">
-		<h4>Agile Team Project</h4>
-		<img src="assets/images/chess.jpg" class="img-fluid full-width" />
-		<p>
-		  Worked on an Agile software development team building
-		  a chess application. Under the guidance of a senior software engineer,
-		  we had weekly Agile team meetings for code reviews, sprint planning,
-		  and feature assignments.
-		</p>
-	  </div>
-	  <!--End-->
-	  <br class="clear" />
-    	    </article>
-    	  </section>
-    	  
-    		<!--Skills and Tools-->
-  	  <h3 id="skills-and-tools">Skills &amp; Tools</h3>
-  	  <hr class="yellow" />
-  	  <p class="skills-and-tools">
-  		Carlos has developed proficiency and expertise
-  		in the following programming languages and
-  		comfort with the following tools.
-  	  </p>
-  	  <div class="icons">
-  		 <button class="btn btn-primary"><i class="icon-git"></i></button>
-  		  <button class="btn btn-primary"><i class="icon-html5"></i></button>
-  		   <button class="btn btn-primary"><i class="icon-css3"></i></button>
-  		 <button class="btn btn-primary"><i class="icon-javascript-alt"></i></button>
-  		 <button class="btn btn-primary"><i class="icon-php"></i></button>
-  		 <button class="btn btn-primary"><i class="icon-reactjs"></i></button>
-  		  <!--End-->
-  	  </div>
-  	  
-  <div id="hire-me">
-  	<h3>Contact Me </h3>
-     <p> 
-       If you need help in your web development career or want me to create your web application click <a href="mailto:cnah27@gmail.com" class="bg-blue">Here</a>
-    </p>  
-  </div>
-   </div> <!-- End of Container-->
-   
-   
-	 
-      <!--Footer-->
-		<footer class="fixed-bottom">
-			<div class="social-media">
-				<button class="btn btn-responsive bg-white"><a href="https://github.com/RA9" target="_blank"><i class="fa fa-github"></i></a></button>
-			    <button class="btn btn-responsive bg-white"><a href="https://freecodecamp.org/ra9" target="_blank"><i class="fa fa-free-code-camp"></i></a></button>
-				<button class="btn btn-responsive bg-white"><a href="https://facebook.com/carlos.rademe" target="_blank"><i class="fa fa-facebook"></i></a></button>
-				<button class="btn btn-responsive bg-white"><a href="https://twitter.com/carlosnah8" target="_blank"><i class="fa fa-twitter"></i></a></button>
-			
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">About</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Hi, My name is Carlos S. Nah Jr a Fullstack Web Developer with two Years of 
+    		experince in HTML5,CSS3, Javascript ,Ruby,Python, PHP and  MySQL .<br>
+    		I am a learner who is always eager to learn new skills and my life is 
+    		simple by acquanting with new things everyday.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">If you need help on learning new skills or is stuck with any problem or bug please don't hesitate to email me and I will reply as soon as possible. </p>
 			</div>
-		  <p>&copy; Design with <i style="color: red;" class="fa fa-heart"></i> by Carlos S. Nah Jr. 2018</p>
-		</footer>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="#">
+            <i class="fa fa-download mr-2"></i>
+            Contact Now!
+          </a>
+        </div>
+      </div>
+    </section>
 
-    
-    
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email Address</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/tether.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="prism.js"></script>
-	<script type="text/javascript" src="prism.ruby.js"></script>
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">Jamaica Road , Bushord Island
+              <br>Monrovia, Liberia</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/carlosnah8">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; 2018, Carlos S. Nah Jr.</small>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
   </body>
+
 </html>
