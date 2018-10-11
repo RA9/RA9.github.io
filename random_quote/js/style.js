@@ -57,11 +57,11 @@ $(document).ready(function(){
   getQuote();
   });
 });
- $("#tweet").on('click', function(){
+ $("#twitter").on('click', function(){
   var url = "https://twitter.com/intent/tweet";
-  var text= "\"" + document.getElementById("qoute-text").textContent + "\" " + document.getElementById("author").textContent;
+  var text= "\"" + document.getElementById("qoute").textContent + "\" " + document.getElementById("author").textContent;
 
-  var hashtags = "fCC,quote";
+  var hashtags = "FCC, Quotes ";
 
   window.open(url + "?text=" + text + ";hashtags=" + hashtags, "width=500,heigth=300");
 
