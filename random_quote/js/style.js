@@ -52,11 +52,19 @@ $(document).ready(function(){
     $("#author").html("-" + data.quoteAuthor);
   });
   }
-  $("#twitter").on("click",function(){
-	  window.open("https://twitter.com/intent/tweet?text="+quotes);
-  });
+  
   $('.get-quote').on("click",function(){
   getQuote();
   });
 });
+ $("#tweet").on('click', function(){
+  var url = "https://twitter.com/intent/tweet";
+  var text= "\"" + document.getElementById("qoute-text").textContent + "\" " + document.getElementById("author").textContent;
 
+  var hashtags = "fCC,quote";
+
+  window.open(url + "?text=" + text + ";hashtags=" + hashtags, "width=500,heigth=300");
+
+  });
+
+  
