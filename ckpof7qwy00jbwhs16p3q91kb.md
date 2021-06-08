@@ -1,0 +1,3 @@
+## Variables in JavaScript?
+
+undefined
