@@ -1,6 +1,7 @@
-<b>Carlos S. Nah</b>
+# Carlos S. Nah
 
-<p>Junior Software Developer based in Liberia, open to remote jobs or contracts.
+<p>
+ The intricate workings of computers have always captivated me. From the fundamental building blocks like gates and bits, to the seamless collaboration between hardware and software, it's this computational power that tackles the world's most pressing challenges. My passion lies in harnessing this potential to create positive change. Through programming, writing, and the way I approach life, I strive to make the world a better place whilst honoring **God**.
 </p>
 
 
@@ -9,7 +10,7 @@
 
 <details>
   <summary> <b>Total Commit Stats</b> </summary>
-    [![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)](https://git.io/streak-stats)
+  ![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)](https://git.io/streak-stats)
 </details>
 
 
