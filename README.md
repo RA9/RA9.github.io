@@ -10,7 +10,7 @@
 
 <details>
   <summary> <b>Total Commit Stats</b> </summary>
-  ![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)](https://git.io/streak-stats)
+  ![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)(https://git.io/streak-stats)
 </details>
 
 
