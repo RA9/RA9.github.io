@@ -1,7 +1,7 @@
 # Carlos S. Nah
 
 <p>
- The intricate workings of computers have always captivated me. From the fundamental building blocks like gates and bits, to the seamless collaboration between hardware and software, it's this computational power that tackles the world's most pressing challenges. My passion lies in harnessing this potential to create positive change. Through programming, writing, and the way I approach life, I strive to make the world a better place whilst honoring **God**.
+ The intricate workings of computers have always captivated me. From the fundamental building blocks like gates and bits, to the seamless collaboration between hardware and software, it's this computational power that tackles the world's most pressing challenges. My passion lies in harnessing this potential to create positive change. Through programming, writing, and the way I approach life, I strive to make the world a better place whilst honoring <b>God</b>.
 </p>
 
 
@@ -10,7 +10,7 @@
 
 <details>
   <summary> <b>Total Commit Stats</b> </summary>
-  ![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)(https://git.io/streak-stats)
+  ![GitHub Streak](https://github-readme-streak-stats-nu-amber.vercel.app?user=ra9)
 </details>
 
 
@@ -24,7 +24,7 @@
 <b> Languages and Tools:</b>
 
 <p>
-<img align="left" alt="Visual Studio Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;" /> <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
+<img align="left" alt="C Programming" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" style="padding-right:10px;" /> <img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;" />
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" /> 
 <img align="left" alt="JavaScript" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
 <img align="left" alt="Node.js" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="padding-right:10px;" />
