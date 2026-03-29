@@ -1,218 +1,560 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
-	 <meta name="description" content="Carlos S. Nah, Jr is a professional software engineer specializing in full-stack development.
-	He has extensive experience with Ruby, Rails, JavaScript,Reactjs,PHP 
-	and is capable of building web applications.">
-    <meta name="author" content="Carlos S. Nah, Jr">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Carlos S. Nah, Jr (MrHumble) — Software Engineer, Instructor & Technical Writer from Monrovia, Liberia. Building with JavaScript, Python, React, Svelte, Vue, Node.js, and more."
+        />
+        <meta name="author" content="Carlos S. Nah, Jr" />
+        <meta name="theme-color" content="#4f46e5" />
 
-	<title>Carlos S. Nah, Jr</title>
-	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
-	<link rel="stylesheet" href="">
-	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
-	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
-	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
-	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
-	<script src="bower_components/custombox/dist/custombox.min.js"></script>
-	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
-	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
-	<link rel="stylesheet" href="assets/styles/styles.css">
-</head>
+        <title>Carlos S. Nah, Jr — Software Engineer</title>
 
-<body>
-	<div class="wrapper">
-		<div class="thin-bar">
-		</div>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
 
-		<section id="about">
-			<div class="row">
-				<div class="small-12 large-8 large-offset-2 columns text-center">
-					<img class="img-circle" src="assets/images/carlos.jpg" alt="headshot" width="150" height="150">
-					<div class="details">
-						<h2>Hi, I'm Carlos. I...<br> <span id="writing-text"><span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 column">
-					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:cnah27@gmail.com">Get In Touch</a>
-					</div>
-				</div>
-				<div class="small-12 column">
-					<div class="my-arrow-div text-center">
-						<a href="https://github.com/ra9"><i class="fa fa-github-alt fa-2x"></i></a>
-						<a href="http://www.youtube.com/carlosnah"><i class="fa fa-youtube fa-2x"></i></a>
-					</div>
-				</div>
-			</div>
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
 
-		</section>
+        <!-- Dev Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+        />
 
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/styles/styles.css" />
+    </head>
 
-		<section id="experience">
+    <body>
+        <!-- ========== NAVIGATION ========== -->
+        <nav class="nav" id="nav">
+            <div class="container nav__inner">
+                <a href="#" class="nav__logo">
+                    <span class="nav__logo-mark">C</span>
+                    <span class="nav__logo-text">carlos.dev</span>
+                </a>
+                <button
+                    class="nav__toggle"
+                    id="nav-toggle"
+                    aria-label="Toggle menu"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#teaching">Teaching</a></li>
+                    <li>
+                        <a href="#contact" class="btn btn--sm btn--primary"
+                            >Let's Talk</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-			<div class="row column">
-				<div class="small-12">
-					<h2 class="text-center">My Experience</h2>
-					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-laptop"></i>
-					<h3>Front-end</h3>
-					<ul>
-						<li>html(5)</li>
-						<li>css(3)</li>
-						<li>Javascript</li>
-						<li>Jquery</li>
-						<li>Bootstrap</li>
-						<li>Semantics-UI</li>
-						<li>Api | Ajax</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-database"></i>
-					<h3>Back-end</h3>
-					<ul>
-						<li>NodeJS</li>
-						<li>NPM</li>
-						<li>Gatsby</li>
-						<li>Express</li>
-						<li>SQL</li>
-						<li>Mongo</li>
-						<li>Restful Web Services</li>
-						<li>Django | Flask | Python</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-star"></i>
-					<h3>Tools</h3>
-					<ul>
-						<li>Vim</li>
-						<li>Bower</li>
-						<li>Vs Code || Atom || Webstorm</li>
-						<li>Github && Bitbucket</li>
-						<li>SSH</li>
-						<li>Gulp</li>
-					</ul>
-				</div>
-			</div>
+        <!-- ========== HERO ========== -->
+        <section class="hero" id="about">
+            <!-- Decorative grid -->
+            <div class="hero__grid-bg" aria-hidden="true"></div>
+            <!-- Decorative glow -->
+            <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+            <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
 
-		</section>
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <div class="hero__badge reveal">
+                        <span class="status-dot"></span>
+                        Available for work
+                    </div>
+                    <h1 class="hero__title reveal">
+                        I craft software<br />
+                        that
+                        <span class="gradient-text">makes a difference</span>.
+                    </h1>
+                    <p class="hero__sub reveal">
+                        I'm <strong>Carlos S. Nah, Jr</strong> — a software
+                        engineer, instructor, and technical writer from
+                        Monrovia, Liberia. From low-level C to modern front-end
+                        frameworks, I turn ideas into products and teach others
+                        to do the same.
+                    </p>
+                    <div class="hero__actions reveal">
+                        <a
+                            class="btn btn--primary"
+                            href="mailto:cnah27@gmail.com"
+                        >
+                            <i class="fa-solid fa-paper-plane"></i> Get in touch
+                        </a>
+                        <a
+                            class="btn btn--ghost"
+                            href="https://github.com/ra9"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <div class="hero__typed reveal">
+                        <span class="typed-prefix">&gt;</span>
+                        <span id="typed-output"></span>
+                        <span class="cursor" aria-hidden="true"></span>
+                    </div>
+                </div>
 
-		<section id="work">
-			<h2 class="text-center">Work</h2>
-			<div class="row">
-				<p class="text-center tag-line">Here are few of my former clients.</p>
-			</div>
+                <div class="hero__visual reveal">
+                    <div class="hero__card">
+                        <div class="hero__card-header">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--yellow"></span>
+                            <span class="dot dot--green"></span>
+                            <span class="hero__card-title"
+                                >carlos.config.js</span
+                            >
+                        </div>
+                        <pre
+                            class="hero__code"
+                        ><code><span class="code-kw">const</span> <span class="code-var">carlos</span> = {
+  <span class="code-key">name</span>: <span class="code-str">"Carlos S. Nah, Jr"</span>,
+  <span class="code-key">alias</span>: <span class="code-str">"MrHumble"</span>,
+  <span class="code-key">location</span>: <span class="code-str">"Monrovia, Liberia"</span>,
+  <span class="code-key">roles</span>: [
+    <span class="code-str">"Software Engineer"</span>,
+    <span class="code-str">"Instructor"</span>,
+    <span class="code-str">"Technical Writer"</span>,
+  ],
+  <span class="code-key">passions</span>: [
+    <span class="code-str">"Building for the web"</span>,
+    <span class="code-str">"Teaching"</span>,
+    <span class="code-str">"Open source"</span>,
+  ],
+};</code></pre>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Scroll indicator -->
+            <div class="hero__scroll" aria-hidden="true">
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
 
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/hunter-cole-portfolio-image.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>Hunter Cole</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>An internationally recognized Scientist and Artist from Loyola University of Chicago.</p>
-						<a class="my-button" target="_blank" href="http://huntercole.org">Visit Website</a>
-					</div>
-				</div>
-			</div>
+        <!-- ========== ABOUT / PHILOSOPHY ========== -->
+        <section class="about" id="philosophy">
+            <div class="container">
+                <div class="about__inner reveal">
+                    <div class="about__label">About me</div>
+                    <div class="about__grid">
+                        <div class="about__text">
+                            <h2>
+                                The intricate workings of computers have always
+                                captivated me.
+                            </h2>
+                            <p>
+                                From the fundamental building blocks like gates
+                                and bits, to the seamless collaboration between
+                                hardware and software — it's this computational
+                                power that tackles the world's most pressing
+                                challenges.
+                            </p>
+                            <p>
+                                My passion lies in harnessing this potential to
+                                create positive change. Through programming,
+                                writing, and the way I approach life, I strive
+                                to make the world a better place whilst honoring
+                                <strong>God</strong>.
+                            </p>
+                        </div>
+                        <div class="about__stats">
+                            <div class="stat">
+                                <span class="stat__number" data-count="7"
+                                    >0</span
+                                >
+                                <span class="stat__suffix">+</span>
+                                <span class="stat__label"
+                                    >Years of<br />Engineering</span
+                                >
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number" data-count="100"
+                                    >0</span
+                                >
+                                <span class="stat__suffix">s</span>
+                                <span class="stat__label"
+                                    >Students<br />Taught</span
+                                >
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number" data-count="3"
+                                    >0</span
+                                >
+                                <span class="stat__suffix"></span>
+                                <span class="stat__label">Core<br />Roles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			<div class="row work-row"> <!-- even -->
-				<div class="small-12 medium-6 columns">
-					<img src="assets/images/ftm-site.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-offset-1 columns">
-					<div class="details details-ftm">
-						<h3>FreshTechMaids</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>FreshTechMaids is a house maid service company.</p>
-						<a class="my-button" target="_blank" href="http://www.freshtechmaids.com">Visit Website</a>
-					</div>
-				</div>
-			</div>
+        <!-- ========== TECH STACK ========== -->
+        <section class="stack" id="stack">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Tech Stack</span>
+                    <h2>Tools I work with daily</h2>
+                    <p class="section-desc">
+                        Specialist in need. Generalist at heart. Here's what's
+                        in my toolbox.
+                    </p>
+                </header>
 
-			<div class="row work-row"> <!-- odd -->
-				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/sykora-kitchens.png" alt="">
-				</div>
-				<div class="small-12 medium-5 medium-pull-7 columns">
-					<div class="details details-ftm">
-						<h3>Sykora Kitchens</h3>
-						<p class="platform">Web</p>
-						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>A European kitchens and cabinets manufacturer.</p>
-						<a class="my-button" target="_blank" href="http://www.sykorakitchens.com">Visit Website</a>
-					</div>
-				</div>
-			</div>
+                <div class="stack__grid reveal">
+                    <div class="stack__item" data-tooltip="C">
+                        <i class="devicon-c-plain"></i>
+                        <span>C</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Python">
+                        <i class="devicon-python-plain"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="JavaScript">
+                        <i class="devicon-javascript-plain"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="TypeScript">
+                        <i class="devicon-typescript-plain"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="React">
+                        <i class="devicon-react-original"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Vue.js">
+                        <i class="devicon-vuejs-plain"></i>
+                        <span>Vue</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Svelte">
+                        <i class="devicon-svelte-plain"></i>
+                        <span>Svelte</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Node.js">
+                        <i class="devicon-nodejs-plain"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Flask">
+                        <i class="devicon-flask-original"></i>
+                        <span>Flask</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Django">
+                        <i class="devicon-django-plain"></i>
+                        <span>Django</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="PostgreSQL">
+                        <i class="devicon-postgresql-plain"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="MongoDB">
+                        <i class="devicon-mongodb-plain"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Git">
+                        <i class="devicon-git-plain"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Docker">
+                        <i class="devicon-docker-plain"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="Bash">
+                        <i class="devicon-bash-plain"></i>
+                        <span>Bash</span>
+                    </div>
+                    <div class="stack__item" data-tooltip="VS Code">
+                        <i class="devicon-vscode-plain"></i>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ========== EXPERIENCE ========== -->
+        <section class="experience">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">What I Do</span>
+                    <h2>Full-stack, from pixel to production</h2>
+                </header>
 
+                <div class="experience__grid">
+                    <div class="experience__card reveal">
+                        <div class="experience__icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Front-end Engineering</h3>
+                        <p>
+                            Crafting responsive, accessible interfaces with
+                            React, Vue, Svelte, and modern CSS. Performance and
+                            polish in every pixel.
+                        </p>
+                    </div>
 
+                    <div class="experience__card reveal">
+                        <div class="experience__icon experience__icon--cyan">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3>Back-end Systems</h3>
+                        <p>
+                            Building robust APIs and services with Node.js,
+                            Python, Flask, Django, and PostgreSQL. Designed for
+                            scale and reliability.
+                        </p>
+                    </div>
 
+                    <div class="experience__card reveal">
+                        <div class="experience__icon experience__icon--emerald">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Teaching &amp; Mentoring</h3>
+                        <p>
+                            Guiding hundreds of students through programming
+                            fundamentals, data structures, algorithms, and
+                            real-world projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- ========== WORK ========== -->
+        <section class="work" id="work">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Selected Work</span>
+                    <h2>Projects I've shipped</h2>
+                    <p class="section-desc">
+                        Real products for real clients — designed, built, and
+                        deployed.
+                    </p>
+                </header>
 
+                <div class="work__grid">
+                    <article class="work__card reveal">
+                        <div class="work__image">
+                            <img
+                                src="assets/images/hunter-cole-portfolio-image.png"
+                                alt="Hunter Cole website screenshot"
+                                loading="lazy"
+                            />
+                            <div class="work__overlay">
+                                <a
+                                    class="btn btn--sm btn--white"
+                                    href="http://huntercole.org"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    View Live
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__info">
+                            <div class="work__tags">
+                                <span class="tag">Web</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <h3>Hunter Cole</h3>
+                            <p>
+                                Portfolio for an internationally recognized
+                                scientist and artist at Loyola University of
+                                Chicago.
+                            </p>
+                        </div>
+                    </article>
 
+                    <article class="work__card reveal">
+                        <div class="work__image">
+                            <img
+                                src="assets/images/ftm-site.png"
+                                alt="FreshTechMaids website screenshot"
+                                loading="lazy"
+                            />
+                            <div class="work__overlay">
+                                <a
+                                    class="btn btn--sm btn--white"
+                                    href="http://www.freshtechmaids.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    View Live
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__info">
+                            <div class="work__tags">
+                                <span class="tag">Web</span>
+                                <span class="tag">Business</span>
+                            </div>
+                            <h3>FreshTechMaids</h3>
+                            <p>
+                                A clean, conversion-focused site for a
+                                professional house cleaning service company.
+                            </p>
+                        </div>
+                    </article>
 
+                    <article class="work__card reveal">
+                        <div class="work__image">
+                            <img
+                                src="assets/images/sykora-kitchens.png"
+                                alt="Sykora Kitchens website screenshot"
+                                loading="lazy"
+                            />
+                            <div class="work__overlay">
+                                <a
+                                    class="btn btn--sm btn--white"
+                                    href="http://www.sykorakitchens.com"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    View Live
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work__info">
+                            <div class="work__tags">
+                                <span class="tag">Web</span>
+                                <span class="tag">E-Commerce</span>
+                            </div>
+                            <h3>Sykora Kitchens</h3>
+                            <p>
+                                Digital presence for a European premium kitchens
+                                and cabinets manufacturer.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-		</section>
+        <!-- ========== TEACHING ========== -->
+        <section class="teaching" id="teaching">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-label">Teaching</span>
+                    <h2>Domains I teach</h2>
+                    <p class="section-desc">
+                        I've taught programming to hundreds of students — in
+                        person and remotely. Here's what I cover.
+                    </p>
+                </header>
 
-		<section id="teaching">
-			<h2 class="text-center">Teaching</h2>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2">
-					<p class="text-center tag-line">In the last couple of years, I've taught programming to hundreds of students both privately in person and remotely. Here are some of the domains I've helped students with...</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<div class="teaching-domains">
-					</div>
-				</div>
-			</div>
-		</section>
+                <div class="teaching__pills reveal" id="skill-pills">
+                    <span class="pill pill--indigo">JavaScript</span>
+                    <span class="pill pill--amber">Python</span>
+                    <span class="pill pill--cyan">React</span>
+                    <span class="pill pill--indigo">Node.js</span>
+                    <span class="pill pill--emerald">HTML &amp; CSS</span>
+                    <span class="pill pill--amber">SQL &amp; Databases</span>
+                    <span class="pill pill--cyan">Data Structures</span>
+                    <span class="pill pill--emerald">Algorithms</span>
+                    <span class="pill pill--indigo"
+                        >Git &amp; Version Control</span
+                    >
+                    <span class="pill pill--amber">REST APIs</span>
+                    <span class="pill pill--cyan">Vue.js</span>
+                    <span class="pill pill--emerald">Flask &amp; Django</span>
+                    <span class="pill pill--indigo">Web Architecture</span>
+                    <span class="pill pill--amber">Problem Solving</span>
+                    <span class="pill pill--cyan"
+                        >Programming Fundamentals</span
+                    >
+                    <span class="pill pill--emerald">C Programming</span>
+                </div>
+            </div>
+        </section>
 
-		<section id="footer-cta">
-			<h2 class="text-center">Wanna work with me?</h2>
-			<p></p>
-			<div class="row text-center">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">I'm currently available for work.</p>
-				</div>
-				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="mailto:cnah27@gmail.com">Start Now</a>
-				</div>
-			</div>
-		</section>
+        <!-- ========== CTA ========== -->
+        <section class="cta" id="contact">
+            <div class="container">
+                <div class="cta__inner reveal">
+                    <span class="section-label section-label--light"
+                        >Get in touch</span
+                    >
+                    <h2>
+                        Have a project in mind?<br />Let's build it together.
+                    </h2>
+                    <p>
+                        I'm currently available for freelance work,
+                        collaborations, and teaching engagements.
+                    </p>
+                    <div class="cta__actions">
+                        <a
+                            class="btn btn--white"
+                            href="mailto:cnah27@gmail.com"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                            cnah27@gmail.com
+                        </a>
+                        <div class="cta__socials">
+                            <a
+                                href="https://github.com/ra9"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="GitHub"
+                            >
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a
+                                href="http://www.youtube.com/carlosnah"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="YouTube"
+                            >
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<footer id="footer">
-			<div class="row text-center">
-				<div class="small-12 medium-6 medium-offset-3 columns">
-					<p id="logo">CSN</p>
-					<p id="copyright">Copyright &copy; 2018 | Carlos S. Nah</p>
-				</div>
-			</div>
-		</footer>
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+            <div class="container footer__inner">
+                <div class="footer__left">
+                    <span class="nav__logo-mark">C</span>
+                    <p>&copy; 2026 Carlos S. Nah, Jr. All rights reserved.</p>
+                </div>
+                <div class="footer__right">
+                    <a href="#about">Top</a>
+                    <a href="#stack">Stack</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
 
-
-
-	</div>
-	<script src="assets/scripts/app.js" charset="utf-8"></script>
-</body>
-
+        <script src="assets/scripts/app.js"></script>
+    </body>
 </html>
