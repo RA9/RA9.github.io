@@ -957,6 +957,55 @@ strong {
 	opacity: 1;
 }
 
+/* Quote Machine preview card (no screenshot) */
+.work__image--quote {
+	background: linear-gradient(135deg, var(--midnight), var(--slate-900));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.work__quote-preview {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--sp-4);
+	padding: var(--sp-8) var(--sp-6);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.work__quote-preview i {
+	font-size: 1.6rem;
+	color: var(--indigo-light);
+	opacity: 0.5;
+}
+
+.work__quote-preview p {
+	font-family: var(--font-heading);
+	font-size: 1.05rem;
+	font-weight: 500;
+	color: var(--slate-300);
+	line-height: 1.6;
+	max-width: 280px;
+}
+
+.work__image--quote::before {
+	content: "";
+	position: absolute;
+	top: -30%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	background: var(--indigo);
+	filter: blur(80px);
+	opacity: 0.18;
+	pointer-events: none;
+}
+
 .work__info {
 	padding: var(--sp-6);
 }
