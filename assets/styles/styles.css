@@ -210,7 +210,7 @@ strong {
 	width: 36px;
 	height: 36px;
 	border-radius: var(--r-md);
-	background: linear-gradient(135deg, var(--indigo), var(--cyan));
+	background: var(--indigo);
 	color: var(--white);
 	font-family: var(--font-heading);
 	font-weight: 700;
@@ -292,7 +292,7 @@ strong {
 }
 
 .btn--primary {
-	background: linear-gradient(135deg, var(--indigo), var(--indigo-light));
+	background: var(--indigo);
 	color: var(--white);
 	border-color: transparent;
 	box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
