@@ -81,6 +81,7 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-wrap: break-word;
 }
 
 img {
@@ -148,6 +149,7 @@ strong {
 	align-items: center;
 	gap: var(--sp-2);
 	padding: var(--sp-3) var(--sp-5);
+	min-height: 44px;
 	border: 1px solid var(--color-border);
 	border-radius: var(--r-md);
 	font-size: 0.9375rem;
@@ -259,24 +261,28 @@ strong {
 	margin-bottom: var(--sp-10);
 }
 
+/* Inline (not flex) so the line wraps naturally on narrow screens,
+   with reserved height so typing never shifts the layout. */
 .hero__typed {
 	font-family: var(--font-mono);
-	font-size: 0.875rem;
+	font-size: clamp(0.75rem, 2.8vw, 0.875rem);
+	line-height: 1.6;
 	color: var(--slate-500);
-	display: flex;
-	align-items: center;
-	gap: var(--sp-2);
-	min-height: 1.5rem;
+	min-height: 1.6em;
+	overflow-wrap: anywhere;
 }
 
 .typed-prefix {
 	color: var(--color-accent);
+	margin-right: var(--sp-2);
 }
 
 .cursor {
 	display: inline-block;
 	width: 8px;
-	height: 1rem;
+	height: 1em;
+	vertical-align: text-bottom;
+	margin-left: var(--sp-1);
 	background: var(--color-accent);
 	animation: blink 1s steps(2, start) infinite;
 }
@@ -289,10 +295,21 @@ strong {
 
 .hero__socials {
 	display: flex;
-	gap: var(--sp-5);
-	margin-top: var(--sp-8);
-	font-size: 1.125rem;
+	gap: var(--sp-2);
+	margin-top: var(--sp-6);
+	/* pull back so the icons optically align with the text above */
+	margin-left: calc(var(--sp-3) * -1);
 	color: var(--slate-500);
+}
+
+/* 44px minimum touch target */
+.hero__socials a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	font-size: 1.125rem;
 }
 
 .hero__socials a:hover {
@@ -311,9 +328,10 @@ strong {
 	display: inline-flex;
 	align-items: center;
 	gap: var(--sp-2);
+	min-height: 44px;
 	font-size: 0.875rem;
 	color: var(--slate-500);
-	margin-bottom: var(--sp-8);
+	margin-bottom: var(--sp-5);
 }
 
 .backlink:hover {
@@ -400,6 +418,8 @@ strong {
 .prose {
 	padding-top: var(--sp-8);
 	font-size: 1.0625rem;
+	/* comfortable reading measure on wide screens */
+	max-width: 68ch;
 }
 
 .prose p {
@@ -467,13 +487,65 @@ strong {
 /* ==================
    RESPONSIVE
    ================== */
+
+/* Short viewports (landscape phones): don't force a full-height hero */
+@media (max-height: 620px) {
+	.hero {
+		min-height: 0;
+		padding-block: var(--sp-12);
+	}
+}
+
+/* Small tablets / large phones — let the two buttons share the row */
+@media (min-width: 481px) and (max-width: 640px) {
+	.hero__actions .btn {
+		flex: 1 1 auto;
+		justify-content: center;
+	}
+}
+
 @media (max-width: 640px) {
 	.hero {
 		padding-block: var(--sp-16);
 	}
 
+	/* reserve two lines so the typing animation can't shift the page */
+	.hero__typed {
+		min-height: 3.2em;
+	}
+
+	.page-head {
+		padding-block: var(--sp-10) var(--sp-8);
+	}
+
+	.posts,
+	.article {
+		padding-block: var(--sp-8) var(--sp-16);
+	}
+
+	.prose blockquote {
+		padding-left: var(--sp-5);
+		font-size: 1.125rem;
+	}
+
+	.article__end {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+/* Small phones — stack the buttons full width */
+@media (max-width: 480px) {
+	.container {
+		padding-inline: var(--sp-5);
+	}
+
+	.hero__actions {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
 	.hero__actions .btn {
-		flex: 1 1 auto;
 		justify-content: center;
 	}
 }
