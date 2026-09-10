@@ -11,6 +11,11 @@
         <meta name="theme-color" content="#0b1120" />
 
         <title>Blog | Carlos S. Nah, Jr</title>
+        <link
+            rel="icon"
+            href="../assets/images/favicon.svg"
+            type="image/svg+xml"
+        />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,81 +35,145 @@
         <link rel="stylesheet" href="../assets/styles/styles.css" />
     </head>
 
-    <body>
-        <header class="page-head">
-            <div class="container container--narrow">
-                <a class="backlink" href="../">
-                    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-                    Carlos S. Nah, Jr
+    <body class="blog-page" id="top">
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="../" aria-label="Carlos S. Nah, Jr, home">
+                    <span class="site-brand__mark" aria-hidden="true">CSN</span>
+                    <span class="site-brand__copy">
+                        <strong>Carlos S. Nah, Jr</strong>
+                        <small>Ideas, code &amp; life</small>
+                    </span>
                 </a>
-                <h1>Writing</h1>
-                <p>
-                    Essays and notes on software, teaching, and building a life
-                    on your own terms.
-                </p>
+
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <a href="../">About</a>
+                    <a href="./" aria-current="page">Writing</a>
+                    <a class="site-nav__cta" href="mailto:cnah27@gmail.com">
+                        Let’s talk
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </nav>
             </div>
         </header>
 
-        <main class="posts">
-            <div class="container container--narrow">
-                <article>
-                    <a
-                        class="post-card reveal"
-                        href="engineering-in-the-agentic-era.html"
-                    >
-                        <p class="post-meta">
-                            <time datetime="2026-09-07">Sep 7, 2026</time>
-                            <span aria-hidden="true">·</span>
-                            <span>9 min read</span>
-                            <span aria-hidden="true">·</span>
-                            <span>Essay</span>
-                        </p>
-                        <h2>Engineering in the Agentic Era</h2>
+        <main>
+            <header class="blog-hero">
+                <div class="container blog-hero__inner">
+                    <div class="blog-hero__content">
+                        <p class="section-label">Field notes / 001</p>
+                        <h1>Thoughts worth <em>writing down.</em></h1>
                         <p>
-                            The real question is no longer whether AI will
-                            replace developers. It is how AI reshapes the way we
-                            work, and where our actual value as engineers lies.
+                            Essays on software, teaching, ambition, and building
+                            a meaningful life on your own terms.
                         </p>
-                        <span class="link-arrow">
-                            Read the essay
-                            <i
-                                class="fa-solid fa-arrow-right"
-                                aria-hidden="true"
-                            ></i>
-                        </span>
-                    </a>
-                </article>
+                    </div>
 
-                <article>
-                    <a
-                        class="post-card reveal"
-                        href="the-dream-they-promised-us.html"
-                    >
-                        <p class="post-meta">
-                            <time datetime="2026-09-07">Sep 7, 2026</time>
-                            <span aria-hidden="true">·</span>
-                            <span>5 min read</span>
-                            <span aria-hidden="true">·</span>
-                            <span>Essay</span>
-                        </p>
-                        <h2>The Dream They Promised Us</h2>
-                        <p>
-                            We were handed one script: study hard, earn the
-                            degree, get the job, and the life you imagined will
-                            follow. For most of us, reality told a very
-                            different story.
-                        </p>
-                        <span class="link-arrow">
-                            Read the essay
-                            <i
-                                class="fa-solid fa-arrow-right"
-                                aria-hidden="true"
-                            ></i>
-                        </span>
-                    </a>
-                </article>
-            </div>
+                    <div class="blog-hero__aside" aria-label="Topics covered">
+                        <span>Exploring</span>
+                        <ul>
+                            <li>Engineering</li>
+                            <li>Technology</li>
+                            <li>Life &amp; growth</li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <section class="posts blog-posts" aria-labelledby="latest-writing">
+                <div class="container">
+                    <div class="posts__heading">
+                        <div>
+                            <p class="section-label">From the notebook</p>
+                            <h2 id="latest-writing">Latest writing</h2>
+                        </div>
+                        <span>02 essays</span>
+                    </div>
+
+                    <div class="posts__grid">
+                        <article>
+                            <a
+                                class="post-card reveal"
+                                href="engineering-in-the-agentic-era.html"
+                            >
+                                <span class="post-card__number" aria-hidden="true">01</span>
+                                <p class="post-meta">
+                                    <time datetime="2026-09-07">Sep 7, 2026</time>
+                                    <span aria-hidden="true">·</span>
+                                    <span>9 min read</span>
+                                    <span aria-hidden="true">·</span>
+                                    <span>Essay</span>
+                                </p>
+                                <h3>Engineering in the Agentic Era</h3>
+                                <p>
+                                    The real question is no longer whether AI
+                                    will replace developers. It is how AI
+                                    reshapes the way we work, and where our
+                                    actual value as engineers lies.
+                                </p>
+                                <span class="link-arrow">
+                                    Read the essay
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a
+                                class="post-card reveal"
+                                href="the-dream-they-promised-us.html"
+                            >
+                                <span class="post-card__number" aria-hidden="true">02</span>
+                                <p class="post-meta">
+                                    <time datetime="2026-09-07">Sep 7, 2026</time>
+                                    <span aria-hidden="true">·</span>
+                                    <span>5 min read</span>
+                                    <span aria-hidden="true">·</span>
+                                    <span>Essay</span>
+                                </p>
+                                <h3>The Dream They Promised Us</h3>
+                                <p>
+                                    We were handed one script: study hard, earn
+                                    the degree, get the job, and the life you
+                                    imagined will follow. Reality told a very
+                                    different story.
+                                </p>
+                                <span class="link-arrow">
+                                    Read the essay
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </span>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__main">
+                    <div>
+                        <a class="site-footer__mark" href="../">CSN.</a>
+                        <p>Building useful things and sharing what I learn.</p>
+                    </div>
+                    <nav class="site-footer__links" aria-label="Social links">
+                        <a href="https://github.com/ra9" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="http://www.youtube.com/carlosnah" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="mailto:cnah27@gmail.com">Email</a>
+                    </nav>
+                </div>
+                <div class="site-footer__bottom">
+                    <span>&copy; 2026 Carlos S. Nah, Jr</span>
+                    <a href="#top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
 
         <script src="../assets/scripts/app.js"></script>
     </body>

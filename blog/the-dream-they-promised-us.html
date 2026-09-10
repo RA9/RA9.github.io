@@ -11,6 +11,11 @@
         <meta name="theme-color" content="#0b1120" />
 
         <title>The Dream They Promised Us | Carlos S. Nah, Jr</title>
+        <link
+            rel="icon"
+            href="../assets/images/favicon.svg"
+            type="image/svg+xml"
+        />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +35,28 @@
         <link rel="stylesheet" href="../assets/styles/styles.css" />
     </head>
 
-    <body id="top">
+    <body class="blog-page" id="top">
+        <header class="site-header">
+            <div class="container site-header__inner">
+                <a class="site-brand" href="../" aria-label="Carlos S. Nah, Jr, home">
+                    <span class="site-brand__mark" aria-hidden="true">CSN</span>
+                    <span class="site-brand__copy">
+                        <strong>Carlos S. Nah, Jr</strong>
+                        <small>Ideas, code &amp; life</small>
+                    </span>
+                </a>
+
+                <nav class="site-nav" aria-label="Primary navigation">
+                    <a href="../">About</a>
+                    <a href="./" aria-current="page">Writing</a>
+                    <a class="site-nav__cta" href="mailto:cnah27@gmail.com">
+                        Let’s talk
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
         <main class="article">
             <div class="container">
                 <header class="article__head">
@@ -255,6 +281,26 @@
                 </div>
             </div>
         </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__main">
+                    <div>
+                        <a class="site-footer__mark" href="../">CSN.</a>
+                        <p>Building useful things and sharing what I learn.</p>
+                    </div>
+                    <nav class="site-footer__links" aria-label="Social links">
+                        <a href="https://github.com/ra9" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="http://www.youtube.com/carlosnah" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="mailto:cnah27@gmail.com">Email</a>
+                    </nav>
+                </div>
+                <div class="site-footer__bottom">
+                    <span>&copy; 2026 Carlos S. Nah, Jr</span>
+                    <a href="#top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
 
         <script src="../assets/scripts/app.js"></script>
     </body>
