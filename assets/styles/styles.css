@@ -1,6 +1,6 @@
 /* ============================================
    Carlos S. Nah, Jr — Portfolio & Blog
-   Minimal redesign · flat, no gradients
+   Editorial, pixel-inspired design
    ============================================ */
 
 /* --- Design Tokens --- */
@@ -209,15 +209,57 @@ strong {
    HERO
    ================== */
 .hero {
+	position: relative;
 	display: flex;
 	align-items: center;
+	isolation: isolate;
 	min-height: 100vh;
 	min-height: 100svh;
-	padding-block: var(--sp-20);
+	padding-block: clamp(4rem, 9vw, 7rem);
+	overflow: hidden;
+	background-color: var(--color-bg);
+	background-image: url("../images/pixel-grid.svg");
+	background-size: 320px 320px;
+}
+
+.hero::before,
+.hero::after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 10px;
+	height: 10px;
+	background: var(--color-accent);
+	opacity: 0.3;
+	box-shadow:
+		10px 0 var(--color-accent),
+		20px 0 var(--color-accent),
+		20px 10px var(--color-accent),
+		30px 10px var(--color-accent),
+		30px 20px var(--color-accent);
+}
+
+.hero::before {
+	top: 8%;
+	left: 3%;
+}
+
+.hero::after {
+	right: 5%;
+	bottom: 8%;
+	transform: rotate(180deg);
 }
 
 .hero__inner {
-	max-width: 720px;
+	display: grid;
+	grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+	align-items: center;
+	gap: clamp(3rem, 7vw, 6rem);
+	max-width: 1180px;
+}
+
+.hero__content {
+	min-width: 0;
 }
 
 .hero__badge {
@@ -229,7 +271,8 @@ strong {
 	border-radius: var(--r-full);
 	font-size: 0.8125rem;
 	color: var(--slate-400);
-	margin-bottom: var(--sp-6);
+	background: rgba(11, 17, 32, 0.82);
+	margin-bottom: var(--sp-8);
 }
 
 .status-dot {
@@ -240,9 +283,27 @@ strong {
 	box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.18);
 }
 
+.hero__eyebrow {
+	margin-bottom: var(--sp-4);
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--slate-500);
+}
+
+.hero__eyebrow span {
+	margin-inline: var(--sp-2);
+	color: var(--color-accent);
+}
+
 .hero__title {
-	font-size: clamp(2.25rem, 6vw, 3.75rem);
-	margin-bottom: var(--sp-6);
+	max-width: 13ch;
+	font-size: clamp(2.6rem, 5.8vw, 5rem);
+	line-height: 0.98;
+	letter-spacing: -0.045em;
+	margin-bottom: var(--sp-8);
 }
 
 .hero__title em {
@@ -251,8 +312,10 @@ strong {
 }
 
 .hero__sub {
-	font-size: clamp(1rem, 2vw, 1.125rem);
-	max-width: 60ch;
+	max-width: 62ch;
+	font-size: clamp(1rem, 1.5vw, 1.0625rem);
+	line-height: 1.8;
+	color: var(--slate-300);
 	margin-bottom: var(--sp-8);
 }
 
@@ -260,7 +323,7 @@ strong {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--sp-3);
-	margin-bottom: var(--sp-10);
+	margin-bottom: var(--sp-8);
 }
 
 /* Inline (not flex) so the line wraps naturally on narrow screens,
@@ -298,8 +361,7 @@ strong {
 .hero__socials {
 	display: flex;
 	gap: var(--sp-2);
-	margin-top: var(--sp-6);
-	/* pull back so the icons optically align with the text above */
+	margin-top: var(--sp-5);
 	margin-left: calc(var(--sp-3) * -1);
 	color: var(--slate-500);
 }
@@ -315,6 +377,87 @@ strong {
 }
 
 .hero__socials a:hover {
+	color: var(--color-accent);
+}
+
+.hero__portrait {
+	position: relative;
+	width: min(100%, 420px);
+	justify-self: end;
+}
+
+.hero__portrait::before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 72%;
+	height: 65%;
+	border-top: 2px solid rgba(129, 140, 248, 0.5);
+	border-right: 2px solid rgba(129, 140, 248, 0.5);
+	pointer-events: none;
+}
+
+.hero__portrait-frame {
+	position: relative;
+	aspect-ratio: 4 / 5;
+	overflow: hidden;
+	background: var(--color-surface);
+	clip-path: polygon(
+		0 0,
+		calc(100% - 24px) 0,
+		100% 24px,
+		100% 100%,
+		24px 100%,
+		0 calc(100% - 24px)
+	);
+}
+
+.hero__portrait-frame::after {
+	content: "";
+	position: absolute;
+	inset: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	clip-path: inherit;
+	pointer-events: none;
+}
+
+.hero__portrait img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 38%;
+	filter: saturate(0.78) contrast(1.06);
+}
+
+.portrait-pixels {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 14px;
+	height: 14px;
+	background: var(--color-accent);
+	box-shadow:
+		-14px 0 var(--color-accent),
+		-28px 0 var(--color-accent),
+		-14px -14px var(--color-accent),
+		-28px -14px var(--midnight),
+		-28px -28px var(--color-accent);
+}
+
+.hero__portrait figcaption {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--sp-4);
+	margin-top: var(--sp-3);
+	font-family: var(--font-mono);
+	font-size: 0.6875rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--slate-500);
+}
+
+.hero__portrait figcaption span:last-child {
 	color: var(--color-accent);
 }
 
@@ -638,6 +781,30 @@ strong {
    RESPONSIVE
    ================== */
 
+@media (max-width: 880px) {
+	.hero__inner {
+		grid-template-columns: minmax(0, 1fr);
+		gap: var(--sp-16);
+	}
+
+	.hero__content {
+		max-width: 720px;
+	}
+
+	.hero__portrait {
+		width: min(100%, 560px);
+		justify-self: start;
+	}
+
+	.hero__portrait-frame {
+		aspect-ratio: 16 / 11;
+	}
+
+	.hero__portrait img {
+		object-position: center 36%;
+	}
+}
+
 /* Short viewports (landscape phones): don't force a full-height hero */
 @media (max-height: 620px) {
 	.hero {
@@ -657,6 +824,19 @@ strong {
 @media (max-width: 640px) {
 	.hero {
 		padding-block: var(--sp-16);
+	}
+
+	.hero__inner {
+		gap: var(--sp-12);
+	}
+
+	.hero__title {
+		font-size: clamp(2.4rem, 12vw, 3.5rem);
+	}
+
+	.hero__portrait::before {
+		top: -10px;
+		right: -10px;
 	}
 
 	/* reserve two lines so the typing animation can't shift the page */
@@ -697,6 +877,15 @@ strong {
 
 	.hero__actions .btn {
 		justify-content: center;
+	}
+
+	.hero__portrait-frame {
+		aspect-ratio: 4 / 3;
+	}
+
+	.hero__portrait figcaption {
+		flex-direction: column;
+		gap: var(--sp-1);
 	}
 }
 
