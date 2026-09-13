@@ -1388,14 +1388,16 @@ strong {
 @media (max-width: 880px) {
 	.hero__inner {
 		grid-template-columns: minmax(0, 1fr);
-		gap: var(--sp-16);
+		gap: var(--sp-10);
 	}
 
 	.hero__content {
 		max-width: 720px;
 	}
 
+	/* portrait leads on smaller screens */
 	.hero__portrait {
+		order: -1;
 		width: min(100%, 560px);
 		justify-self: start;
 	}
@@ -1427,11 +1429,11 @@ strong {
 
 @media (max-width: 640px) {
 	.hero {
-		padding-block: var(--sp-16);
+		padding-block: var(--sp-12) var(--sp-16);
 	}
 
 	.hero__inner {
-		gap: var(--sp-12);
+		gap: var(--sp-8);
 	}
 
 	.hero__title {
