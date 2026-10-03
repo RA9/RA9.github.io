@@ -68,102 +68,348 @@
         <link rel="stylesheet" href="assets/styles/styles.css" />
     </head>
 
-    <body class="home-page">
-        <main class="hero">
-            <div class="container hero__inner">
-                <section class="hero__content" aria-labelledby="hero-title">
-                    <p class="hero__badge reveal">
-                        <span class="status-dot" aria-hidden="true"></span>
-                        Available for meaningful work
-                    </p>
+    <body class="home-page" id="top">
+        <main>
+            <section class="hero" aria-label="Introduction">
+                <div class="container hero__inner">
+                    <section class="hero__content" aria-labelledby="hero-title">
+                        <p class="hero__badge reveal">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            Available for meaningful work
+                        </p>
 
-                    <p class="hero__eyebrow reveal">
-                        Carlos S. Nah, Jr <span aria-hidden="true">//</span>
-                        Software Engineer
-                    </p>
+                        <p class="hero__eyebrow reveal">
+                            Carlos S. Nah, Jr <span aria-hidden="true">//</span>
+                            Software Engineer
+                        </p>
 
-                    <h1 class="hero__title reveal" id="hero-title">
-                        Turning curiosity into
-                        <em>software that matters</em>.
-                    </h1>
+                        <h1 class="hero__title reveal" id="hero-title">
+                            Turning curiosity into
+                            <em>software that matters</em>.
+                        </h1>
 
-                    <p class="hero__sub reveal">
-                        There has always been something fascinating about how
-                        0s and 1s can reshape industries and change lives. That
-                        fascination brought me here, not only to understand the
-                        gates, but to build the habits and tools that inspire
-                        change by solving real-world problems. I’m proud of how
-                        far I’ve come, and you should be proud of your journey
-                        too. Hi there. I’m glad you made it here.
-                    </p>
+                        <p class="hero__sub reveal">
+                            There has always been something fascinating about how
+                            0s and 1s can reshape industries and change lives. That
+                            fascination brought me here, not only to understand the
+                            gates, but to build the habits and tools that inspire
+                            change by solving real-world problems.
+                        </p>
 
-                    <div class="hero__actions reveal">
-                        <a class="btn btn--primary" href="blog/">
-                            <i
-                                class="fa-solid fa-book-open"
-                                aria-hidden="true"
-                            ></i>
-                            Read the blog
-                        </a>
-                        <a class="btn" href="mailto:cnah27@gmail.com">
-                            <i
-                                class="fa-solid fa-paper-plane"
-                                aria-hidden="true"
-                            ></i>
-                            Let’s talk
+                        <div class="hero__actions reveal">
+                            <a class="btn btn--primary" href="blog/">
+                                <i
+                                    class="fa-solid fa-book-open"
+                                    aria-hidden="true"
+                                ></i>
+                                Read the blog
+                            </a>
+                            <a class="btn" href="mailto:cnah27@gmail.com">
+                                <i
+                                    class="fa-solid fa-paper-plane"
+                                    aria-hidden="true"
+                                ></i>
+                                Let’s talk
+                            </a>
+                        </div>
+
+                        <p class="hero__typed reveal" aria-label="What I do">
+                            <span class="typed-prefix" aria-hidden="true">&gt;</span>
+                            <span id="typed-output"></span>
+                            <span class="cursor" aria-hidden="true"></span>
+                        </p>
+
+                        <nav class="hero__socials reveal" aria-label="Social links">
+                            <a
+                                href="https://github.com/ra9"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Carlos on GitHub"
+                            >
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a
+                                href="http://www.youtube.com/carlosnah"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Visit Carlos on YouTube"
+                            >
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:cnah27@gmail.com" aria-label="Email Carlos">
+                                <i
+                                    class="fa-solid fa-envelope"
+                                    aria-hidden="true"
+                                ></i>
+                            </a>
+                        </nav>
+                    </section>
+
+                    <figure class="hero__portrait reveal">
+                        <div class="hero__portrait-frame">
+                            <img
+                                src="assets/images/carlos2.jpg"
+                                alt="Portrait of Carlos S. Nah, Jr"
+                                width="577"
+                                height="960"
+                                fetchpriority="high"
+                            />
+                            <span class="portrait-pixels" aria-hidden="true"></span>
+                        </div>
+                        <figcaption>
+                            <span>CSN // Monrovia, Liberia</span>
+                            <span>Building for impact.</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="home-section" id="work" aria-labelledby="work-title">
+                <div class="container home-section__inner">
+                    <div class="posts__heading">
+                        <div>
+                            <p class="section-label">What I’m building</p>
+                            <h2 id="work-title">Products in progress</h2>
+                        </div>
+                        <span>04 projects</span>
+                    </div>
+
+                    <div class="work-grid">
+                            <a class="work-card reveal" href="https://getmesura.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="work-card__top">
+                                    <span class="project-ad__mark" aria-hidden="true">ME</span>
+                                    <span class="work-card__tags">EdTech · SaaS</span>
+                                </span>
+                                <h3>Mesura Ed</h3>
+                                <p>School management in one calm workspace: admissions, attendance, fees, reports and parent messaging.</p>
+                                <span class="link-arrow">
+                                    getmesura.com
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a class="work-card reveal" href="https://exams.getmesura.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="work-card__top">
+                                    <span class="project-ad__mark" aria-hidden="true">MX</span>
+                                    <span class="work-card__tags">EdTech · Assessment</span>
+                                </span>
+                                <h3>Mesura Exams</h3>
+                                <p>High-stakes exams with a server-side clock, a signed event log, and attempts that can be replayed when a score is disputed.</p>
+                                <span class="link-arrow">
+                                    exams.getmesura.com
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a class="work-card reveal" href="https://zyphia.app/" target="_blank" rel="noopener noreferrer">
+                                <span class="work-card__top">
+                                    <span class="project-ad__mark" aria-hidden="true">ZY</span>
+                                    <span class="work-card__tags">Games · Web</span>
+                                </span>
+                                <h3>ZYPHIA Games</h3>
+                                <p>Instant multiplayer games for the open web. No installs, just a link to share.</p>
+                                <span class="link-arrow">
+                                    zyphia.app
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                            <a class="work-card reveal" href="https://quibble.zyphia.app/" target="_blank" rel="noopener noreferrer">
+                                <span class="work-card__top">
+                                    <span class="project-ad__mark" aria-hidden="true">QU</span>
+                                    <span class="work-card__tags">Games · Word</span>
+                                </span>
+                                <h3>Quibble</h3>
+                                <p>A word game worth sitting down for, part of the ZYPHIA collection.</p>
+                                <span class="link-arrow">
+                                    quibble.zyphia.app
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="posts blog-posts home-section home-writing" id="writing" aria-labelledby="writing-title">
+                <div class="container home-section__inner">
+                    <div class="posts__heading">
+                        <div>
+                            <p class="section-label">From the notebook</p>
+                            <h2 id="writing-title">Latest writing</h2>
+                        </div>
+                        <a class="link-arrow" href="blog/">
+                            All writing
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                         </a>
                     </div>
 
-                    <p class="hero__typed reveal" aria-label="What I do">
-                        <span class="typed-prefix" aria-hidden="true">&gt;</span>
-                        <span id="typed-output"></span>
-                        <span class="cursor" aria-hidden="true"></span>
-                    </p>
+                    <div class="posts__grid">
+                            <article>
+                                <a
+                                    class="post-card reveal"
+                                    href="blog/happy-international-boyfriend-day-i-guess.html"
+                                >
+                                    <span class="post-card__number" aria-hidden="true">01</span>
+                                    <div class="post-card__body">
+                                        <p class="post-meta">
+                                            <time datetime="2026-10-03">Oct 3, 2026</time>
+                                            <span aria-hidden="true">·</span>
+                                            <span>7 min read</span>
+                                            <span aria-hidden="true">·</span>
+                                            <span>Essay</span>
+                                        </p>
+                                        <h3>Happy International Boyfriend Day, I Guess</h3>
+                                        <p>
+                                            The day passed with barely any buzz.
+                                            What our reactions to days like this
+                                            reveal about public validation, double
+                                            standards, and accountability in modern
+                                            relationships.
+                                        </p>
+                                        <span class="link-arrow">
+                                            Read the essay
+                                            <i
+                                                class="fa-solid fa-arrow-right"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </article>
 
-                    <nav class="hero__socials reveal" aria-label="Social links">
-                        <a
-                            href="https://github.com/ra9"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit Carlos on GitHub"
-                        >
-                            <i class="fa-brands fa-github" aria-hidden="true"></i>
-                        </a>
-                        <a
-                            href="http://www.youtube.com/carlosnah"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit Carlos on YouTube"
-                        >
-                            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-                        </a>
-                        <a href="mailto:cnah27@gmail.com" aria-label="Email Carlos">
-                            <i
-                                class="fa-solid fa-envelope"
-                                aria-hidden="true"
-                            ></i>
-                        </a>
-                    </nav>
-                </section>
+    <article>
+                                <a
+                                    class="post-card reveal"
+                                    href="blog/the-choices-of-our-subconscious.html"
+                                >
+                                    <span class="post-card__number" aria-hidden="true">02</span>
+                                    <div class="post-card__body">
+                                        <p class="post-meta">
+                                            <time datetime="2026-09-28">Sep 28, 2026</time>
+                                            <span aria-hidden="true">·</span>
+                                            <span>5 min read</span>
+                                            <span aria-hidden="true">·</span>
+                                            <span>Essay</span>
+                                        </p>
+                                        <h3>The Choices of Our Subconscious</h3>
+                                        <p>
+                                            A quiet taxi ride beside two grieving
+                                            strangers, and a reflection on the
+                                            small, repeated choices that slowly
+                                            become who we are.
+                                        </p>
+                                        <span class="link-arrow">
+                                            Read the essay
+                                            <i
+                                                class="fa-solid fa-arrow-right"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </article>
 
-                <figure class="hero__portrait reveal">
-                    <div class="hero__portrait-frame">
-                        <img
-                            src="assets/images/carlos2.jpg"
-                            alt="Portrait of Carlos S. Nah, Jr"
-                            width="577"
-                            height="960"
-                            fetchpriority="high"
-                        />
-                        <span class="portrait-pixels" aria-hidden="true"></span>
+    <article>
+                                <a
+                                    class="post-card reveal"
+                                    href="blog/engineering-in-the-agentic-era.html"
+                                >
+                                    <span class="post-card__number" aria-hidden="true">03</span>
+                                    <div class="post-card__body">
+                                        <p class="post-meta">
+                                            <time datetime="2026-09-07">Sep 7, 2026</time>
+                                            <span aria-hidden="true">·</span>
+                                            <span>9 min read</span>
+                                            <span aria-hidden="true">·</span>
+                                            <span>Essay</span>
+                                        </p>
+                                        <h3>Engineering in the Agentic Era</h3>
+                                        <p>
+                                            The real question is no longer whether
+                                            AI will replace developers. It is how AI
+                                            reshapes the way we work, and where our
+                                            actual value as engineers lies.
+                                        </p>
+                                        <span class="link-arrow">
+                                            Read the essay
+                                            <i
+                                                class="fa-solid fa-arrow-right"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </span>
+                                    </div>
+                                </a>
+                            </article>
                     </div>
-                    <figcaption>
-                        <span>CSN // Monrovia, Liberia</span>
-                        <span>Building for impact.</span>
-                    </figcaption>
-                </figure>
-            </div>
+                </div>
+            </section>
+
+            <section class="home-section home-teaching" id="teaching" aria-labelledby="teaching-title">
+                <div class="container home-section__inner home-split">
+                    <div>
+                        <p class="section-label">Teaching</p>
+                        <h2 id="teaching-title">Hundreds of students, in person and remotely.</h2>
+                    </div>
+                    <div class="home-split__body">
+                        <p>
+                            I’ve taught programming to hundreds of students, in
+                            person and remotely. Explaining an idea clearly is the
+                            best test of whether you understand it.
+                        </p>
+                        <div class="home-actions">
+                            <a class="btn" href="http://www.youtube.com/carlosnah" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home-section home-contact" id="contact" aria-labelledby="contact-title">
+                <div class="container home-section__inner home-split">
+                    <div>
+                        <p class="section-label">Contact</p>
+                        <h2 id="contact-title">Have something <em>meaningful</em> to build?</h2>
+                    </div>
+                    <div class="home-split__body">
+                        <p>
+                            I’m available for meaningful work, from engineering
+                            to teaching. Email is the fastest way to reach me.
+                        </p>
+                        <div class="home-actions">
+                            <a class="btn btn--primary" href="mailto:cnah27@gmail.com">
+                                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                                cnah27@gmail.com
+                            </a>
+                            <a class="btn" href="https://github.com/ra9" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__main">
+                    <div>
+                        <a class="site-footer__mark" href="./">CSN.</a>
+                        <p>Building useful things and sharing what I learn.</p>
+                    </div>
+                    <nav class="site-footer__links" aria-label="Footer links">
+                        <a href="blog/">Writing</a>
+                        <a href="https://github.com/ra9" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="http://www.youtube.com/carlosnah" target="_blank" rel="noopener noreferrer">YouTube</a>
+                        <a href="mailto:cnah27@gmail.com">Email</a>
+                        <a href="feed.xml">RSS</a>
+                    </nav>
+                </div>
+                <div class="site-footer__bottom">
+                    <span>&copy; 2026 Carlos S. Nah, Jr</span>
+                    <a href="#top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </footer>
 
         <script src="assets/scripts/app.js"></script>
     </body>
