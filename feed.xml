@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Carlos S. Nah, Jr: Writing</title>
+        <link>https://ra9.github.io/blog/</link>
+        <atom:link href="https://ra9.github.io/feed.xml" rel="self" type="application/rss+xml" />
+        <description>Essays and notes on software, teaching, and building a life on your own terms.</description>
+        <language>en</language>
+        <lastBuildDate>Sat, 03 Oct 2026 08:00:00 GMT</lastBuildDate>
+        <item>
+            <title>Happy International Boyfriend Day, I Guess</title>
+            <link>https://ra9.github.io/blog/happy-international-boyfriend-day-i-guess.html</link>
+            <guid isPermaLink="true">https://ra9.github.io/blog/happy-international-boyfriend-day-i-guess.html</guid>
+            <pubDate>Sat, 03 Oct 2026 08:00:00 GMT</pubDate>
+            <description>The day passed with barely any buzz. What our reactions to days like this reveal about public validation, double standards, and accountability in modern relationships.</description>
+        </item>
+        <item>
+            <title>The Choices of Our Subconscious</title>
+            <link>https://ra9.github.io/blog/the-choices-of-our-subconscious.html</link>
+            <guid isPermaLink="true">https://ra9.github.io/blog/the-choices-of-our-subconscious.html</guid>
+            <pubDate>Mon, 28 Sep 2026 08:00:00 GMT</pubDate>
+            <description>A quiet taxi ride beside two grieving strangers, and a reflection on the small, repeated choices that slowly become who we are.</description>
+        </item>
+        <item>
+            <title>Engineering in the Agentic Era</title>
+            <link>https://ra9.github.io/blog/engineering-in-the-agentic-era.html</link>
+            <guid isPermaLink="true">https://ra9.github.io/blog/engineering-in-the-agentic-era.html</guid>
+            <pubDate>Mon, 07 Sep 2026 08:00:00 GMT</pubDate>
+            <description>The real question is no longer whether AI will replace developers. It is how AI reshapes the way we work, and where our actual value as engineers lies.</description>
+        </item>
+        <item>
+            <title>The Dream They Promised Us</title>
+            <link>https://ra9.github.io/blog/the-dream-they-promised-us.html</link>
+            <guid isPermaLink="true">https://ra9.github.io/blog/the-dream-they-promised-us.html</guid>
+            <pubDate>Mon, 07 Sep 2026 08:00:00 GMT</pubDate>
+            <description>We were handed one script: study hard, earn the degree, get the job, and the life you imagined will follow. Reality told a very different story.</description>
+        </item>
+    </channel>
+</rss>

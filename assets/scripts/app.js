@@ -6,6 +6,9 @@
 (function () {
 	"use strict";
 
+	// Tells the CSS that reveals are handled here, cancelling its fallback.
+	document.documentElement.classList.add("reveal-ready");
+
 	/* ------------------------------------------
      Typing Animation (terminal style)
      ------------------------------------------ */

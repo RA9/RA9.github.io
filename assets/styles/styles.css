@@ -1309,7 +1309,21 @@ strong {
 /* ==================
    REVEAL ANIMATION
    ================== */
-.reveal {
+/* Hidden only when JS is running (see the inline script in each page's
+   <head>). If app.js never boots and adds .reveal-ready, the fallback
+   animation shows everything anyway, so content never stays invisible. */
+.js:not(.reveal-ready) .reveal {
+	animation: reveal-fallback var(--dur-slow) var(--ease-out) 2.5s forwards;
+}
+
+@keyframes reveal-fallback {
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.js .reveal {
 	opacity: 0;
 	transform: translateY(16px);
 	transition:
@@ -1317,7 +1331,7 @@ strong {
 		transform var(--dur-slow) var(--ease-out);
 }
 
-.reveal.visible {
+.js .reveal.visible {
 	opacity: 1;
 	transform: none;
 }
@@ -1597,7 +1611,7 @@ strong {
 		transition-duration: 0.01ms !important;
 	}
 
-	.reveal {
+	.js .reveal {
 		opacity: 1;
 		transform: none;
 	}
