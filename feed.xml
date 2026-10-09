@@ -6,7 +6,14 @@
         <atom:link href="https://ra9.github.io/feed.xml" rel="self" type="application/rss+xml" />
         <description>Essays and notes on software, teaching, and building a life on your own terms.</description>
         <language>en</language>
-        <lastBuildDate>Sat, 03 Oct 2026 08:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 09 Oct 2026 08:00:00 GMT</lastBuildDate>
+        <item>
+            <title>The Pain of Unequal Love: When You Give Your Best and Receive the Bare Minimum</title>
+            <link>https://ra9.github.io/blog/the-pain-of-unequal-love.html</link>
+            <guid isPermaLink="true">https://ra9.github.io/blog/the-pain-of-unequal-love.html</guid>
+            <pubDate>Fri, 09 Oct 2026 08:00:00 GMT</pubDate>
+            <description>When you give your best and receive the bare minimum: how to keep loving people without abandoning yourself in the process.</description>
+        </item>
         <item>
             <title>Happy International Boyfriend Day, I Guess</title>
             <link>https://ra9.github.io/blog/happy-international-boyfriend-day-i-guess.html</link>
